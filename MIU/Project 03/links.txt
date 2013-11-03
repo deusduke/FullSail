@@ -1,0 +1,3 @@
+git repo: https://github.com/deusduke/FullSail/tree/master/MIU/Project%2003
+Gold App: http://deusduke.github.io/FullSail/MIU/Project%2003/Gold/index.html
+Bronze App: http://deusduke.github.io/FullSail/MIU/Project%2003/Bronze/index.html

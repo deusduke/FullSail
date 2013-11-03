@@ -1,0 +1,155 @@
+<!doctype html>
+<!--
+	Mobile Interfaces and Useability
+	Project 03 : Gold
+	By: Deus Duke
+	Term:  1304
+-->
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta name="description" content="Free web app to help you manage your projects">
+		<meta name="keywords" content="Mobile,Project Management,Useful Tool,Full Sail">
+		<meta name="robots" content="index, nofollow">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Project Tracker</title>
+
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<section data-role="page" id="pgHome">
+			
+			<header data-role="header">
+				<h1>Project Tracker</h1>
+			</header>
+
+			<div data-role="content">
+				<a href="#pgProjects">
+					<img class="feature_image" src="images/feature.png" alt="Feature Image"/>
+				</a>
+				<p>This app helps to track projects that you are working on</p>
+			</div>
+
+			<footer data-role="footer" data-position="fixed" data-id="index">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#pgHome" class="ui-btn-active" data-icon="home">Home</a></li>
+						<li><a href="#pgProjects" data-icon="grid">Projects</a></li>
+						<li><a href="#pgProjectAdd" data-icon="plus">Add / Edit</a></li>
+						<li><a href="#pgAbout" data-icon="home">About</a></li>
+					</ul>
+				</div>
+			</footer>
+		</section>
+
+		<section data-role="page" id="pgProjects">
+			<header data-role="header">
+				<h1>Project Tracker</h1>
+			</header>
+
+			<div data-role="content">
+				<a id="btnAddDefaultProjects" href="#pgProjectAdd" data-role="button">Add Default Projects</a>
+				<ul id="projectList" data-role="listview" data-filter="true" data-inset="true"></ul>
+			</div>
+
+			<footer data-role="footer" data-position="fixed" data-id="index">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#pgHome" data-icon="home">Home</a></li>
+						<li><a href="#pgProjects" class="ui-btn-active" data-icon="grid">Projects</a></li>
+						<li><a href="#pgProjectAdd" data-icon="plus">Add / Edit</a></li>
+						<li><a href="#pgAbout" data-icon="info">About</a></li>
+					</ul>
+				</div>
+			</footer>
+		</section>
+
+		<section data-role="page" id="pgProjectAdd">
+			<header data-role="header">
+				<h1>Project Tracker</h1>
+			</header>
+
+			<header data-role="header" class="success_msg hide">
+				<h1>Your project was created!</h1>
+			</header>
+
+			<div data-role="content">
+				<h2 id="message" id="hide"></h2>
+				<form action=".">
+					<ul data-role="listview" data-theme="a">
+						<li data-role="fieldcontain">
+							<label for="name">Project Name * :</label>
+							<input type="text" id="name" placeholder="Enter your project name">
+						</li>
+						<li data-role="fieldcontain">
+							<label for="startdate">Start Date * :</label>
+							<input type="date" id="startdate">
+						</li>
+						<li id="radioControlGroup" data-role="controlgroup" data-type="horizontal">
+							<h2 id="typeHeader" class="fw_normal list_label">Project Type * :</h2>
+
+							<input id="internal" name="type" type="radio" value="internal" />
+							<label for="internal">Internal</label>
+
+							<input id="external" name="type" type="radio" value="external" />
+							<label for="external">External</label>
+
+							<input id="personal" name="type" type="radio" value="personal" />
+							<label for="personal">Personal</label>
+							<span class="input_hint">Used to categorize project</span>
+						</li>
+						<li data-role="fieldcontain">
+							<label for="priority">Priority</label>
+							<input id="priority" name="priority" type="range" min="1" max="5">
+							<span class="input_hint">Slide to select a priority 1 - 5</span>
+						</li>
+						<li data-role="fieldcontain">
+							<label for="details">Details:</label>
+							<textarea id="details" name="details" placeholder="Add project details"></textarea>
+						</li>
+						<a id="btnDeleteProject" href="#" data-role="button" data-theme="a" class="hide">Delete Project</a>
+						<a id="btnCreateProject" href="#" data-role="button" data-theme="b">Create Project</a>
+					</ul>
+				</form>
+			</div>
+
+			<footer data-role="footer" data-position="fixed" data-id="index">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#pgHome" data-icon="home">Home</a></li>
+						<li><a href="#pgProjects" data-icon="grid">Projects</a></li>
+						<li><a href="#pgProjectAdd" class="ui-btn-active" data-icon="plus">Add / Edit</a></li>
+						<li><a href="#pgAbout" data-icon="info">About</a></li>
+					</ul>
+				</div>
+			</footer>
+		</section
+
+		<section data-role="page" id="pgAbout">
+			<header data-role="header">
+				<h1>Project Tracker</h1>
+			</header>
+
+			<div data-role="content">
+				<p>This app was create as a class project for Full Sail University.  It it meant to help track details about projects</p>
+			</div>
+
+			<footer data-role="footer" data-position="fixed" data-id="index">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#pgHome" data-icon="home">Home</a></li>
+						<li><a href="#pgProjects" data-icon="grid">Projects</a></li>
+						<li><a href="#pgProjectAdd" data-icon="plus">Add / Edit</a></li>
+						<li><a href="#pgAbout" class="ui-btn-active" data-icon="info">About</a></li>
+					</ul>
+				</div>
+			</footer>
+		</section>>
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/json.js"></script>
+	</body>
+</html>
