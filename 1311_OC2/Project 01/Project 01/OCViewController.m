@@ -39,6 +39,7 @@
     
     NSLog(@"Calculating Maserati time when not tuned:");
     [m setHasBeenSuperCharged:false];
+    [m calculateTimeToTravel10Miles];
     
     NSLog(@"Calculating Tahoe time:");
     [t calculateTimeToTravel10Miles];

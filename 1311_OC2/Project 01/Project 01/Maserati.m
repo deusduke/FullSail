@@ -22,7 +22,7 @@
     else
     {
         NSLog(@"This guy hasn't been tuned it's not running as well");
-        NSLog(@"It will take %.02f minutes to go 10 miles", 10.0 / ([self topSpeed] - 10) / 60);
+        NSLog(@"It will take %.02f minutes to go 10 miles", 10.0 / ([self topSpeed] - 10) * 60);
     }
 }
 
