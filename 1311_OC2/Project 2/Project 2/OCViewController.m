@@ -49,7 +49,7 @@
     if (!calculateButton.enabled)
     {
         calculateButton.enabled = true;
-        fieldPlaceholder = @"Set the miles traved then hit the calculate!!!";
+        fieldPlaceholder = @"Set the miles traveled then hit the calculate!!!";
         [self resetFieldPlaceholder];
     }
     

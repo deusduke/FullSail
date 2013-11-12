@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>998DAC86-CF12-4D18-AA41-DAD4B34E9560</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Project 3</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FC290D7A-BF7C-4108-B0A1-060DB5337B17</key>
+		<string>ssh://github.com/deusduke/FullSail.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>1311_OC2/Project 3/Project 3.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FC290D7A-BF7C-4108-B0A1-060DB5337B17</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/deusduke/FullSail.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FC290D7A-BF7C-4108-B0A1-060DB5337B17</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FC290D7A-BF7C-4108-B0A1-060DB5337B17</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Repo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
