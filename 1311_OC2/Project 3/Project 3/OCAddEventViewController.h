@@ -12,7 +12,7 @@
 
 @required
 -(void) newEventAddedSuccesfully:(NSString*)eventText
-                        withDate:(NSDate*)theDate;
+                        withDate:(NSDate*)eventDate;
 @end
 
 @interface OCAddEventViewController : UIViewController

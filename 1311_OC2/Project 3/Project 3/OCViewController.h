@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OCAddEventViewController.h"
 
-@interface OCViewController : UIViewController
+@interface OCViewController : UIViewController <OCAddEventViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *eventsTextView;
 @property (weak, nonatomic) IBOutlet UIButton *addEventButton;
 
 - (IBAction)onClick:(id)sender;
+
+- (NSString*)getEventText:(NSString*)eventText
+                 withDate:(NSDate*)eventDate;
 
 @end

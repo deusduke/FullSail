@@ -23,7 +23,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="All events will go here..." translatesAutoresizingMaskIntoConstraints="NO" id="ta6-HM-1oY">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="All events will go here..." translatesAutoresizingMaskIntoConstraints="NO" id="ta6-HM-1oY">
                                 <rect key="frame" x="20" y="83" width="280" height="427"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -46,7 +46,6 @@
                     <connections>
                         <outlet property="addEventButton" destination="bV2-Sx-aRt" id="BDA-sA-f4T"/>
                         <outlet property="eventsTextView" destination="ta6-HM-1oY" id="cS6-Nt-6Yk"/>
-                        <segue destination="eY8-5W-FFi" kind="modal" identifier="OCAddEvent" id="til-J4-WrE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -55,7 +54,7 @@
         <!--Add Event View Controller-->
         <scene sceneID="mjx-3i-Yp8">
             <objects>
-                <viewController id="eY8-5W-FFi" customClass="OCAddEventViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OCAddEvent" id="eY8-5W-FFi" customClass="OCAddEventViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XDu-oy-pfR"/>
                         <viewControllerLayoutGuide type="bottom" id="VNl-ni-f4Y"/>
@@ -91,7 +90,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add event..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RcV-zH-OjR">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add event..." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RcV-zH-OjR">
                                 <rect key="frame" x="20" y="103" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>

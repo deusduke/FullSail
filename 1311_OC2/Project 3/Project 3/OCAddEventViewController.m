@@ -49,6 +49,9 @@
     // pass the information to the delegate
     [addEventViewDelegate newEventAddedSuccesfully:[eventTextField text] withDate:[datePicker date]];
     
+    // make sure the keyboard is closed
+    [self onCloseKeyboardPressed:sender];
+    
     // dismiss the view
     [self dismissViewControllerAnimated:YES completion:nil];
 }
