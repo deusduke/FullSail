@@ -10,6 +10,13 @@
 
 @interface OCAppSingleton : NSObject
 
+@property (strong, nonatomic) NSString* eventText;
+@property (nonatomic, assign) bool firstEventAdded;
+
 +(OCAppSingleton*) getInstance;
+-(void) addEvent:(NSString*) eventName
+         andDate:(NSDate*) eventDate;
+- (NSString *)getFormattedEventText:(NSString *)eventText
+                           withDate:(NSDate *)theDate;
 
 @end

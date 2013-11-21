@@ -10,4 +10,12 @@
 
 @interface OCAddEventViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *swipeLabel;
+@property (weak, nonatomic) IBOutlet UITextField *nameField;
+@property (weak, nonatomic) IBOutlet UIButton *closeKeyboardButton;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (strong, nonatomic) UISwipeGestureRecognizer *swipeRecognizer;
+
+-(IBAction) onCloseKeyboard:(id)sender;
+
 @end

@@ -8,21 +8,25 @@
 
 #import "OCViewController.h"
 #import "OCAddEventViewController.h"
+#import "OCAppSingleton.h"
 
 @interface OCViewController ()
 
+@property (weak, nonatomic) OCAppSingleton *singletonInstance;
 -(void)handleSwipe:(UISwipeGestureRecognizer *)swipe;
 
 @end
 
 @implementation OCViewController
 
-@synthesize saveButton, swipeLabel, eventTextField, swipeRecognizer;
+@synthesize singletonInstance, saveButton, swipeLabel, eventTextField, swipeRecognizer;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    singletonInstance = [OCAppSingleton getInstance];
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,6 +37,9 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    // set the default text
+    [eventTextField setText:[singletonInstance eventText]];
+    
     // setup swipe event
     swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
     [swipeRecognizer setDirection:UISwipeGestureRecognizerDirectionRight];
@@ -48,65 +55,65 @@
     [aevc setTransitioningDelegate:self];
     [aevc setModalPresentationStyle:UIModalPresentationCustom];
     
-    // set the animation direction
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:[aevc view] cache:YES];
-    
     // show the view
-    [self presentViewController:aevc animated:NO completion:nil];
+    [self presentViewController:aevc animated:YES completion:nil];
 }
 
-// setup our fancy transitions
-- (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
+-(void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
 {
-    UIView *container = [transitionContext containerView];
-    UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
-    UIViewController * toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    //Get references to the view hierarchy
+    UIView *containerView = [transitionContext containerView];
+    UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
-    CGRect initialFrame = [transitionContext initialFrameForViewController:fromVC];
-    
-    //1.Settings for the fromVC ............................
-    CGAffineTransform rotation;
-    rotation = CGAffineTransformMakeRotation(M_PI);
-    fromVC.view.frame = initialFrame;
-    fromVC.view.layer.anchorPoint = CGPointMake(0.5, 0.0);
-    fromVC.view.layer.position = CGPointMake(160.0, 0);
-    
-    //2.Insert the toVC view...........................
-    [container insertSubview:toVC.view belowSubview:fromVC.view];
-    CGPoint final_toVC_Center = toVC.view.center;
-    
-    toVC.view.center = CGPointMake(-initialFrame.size.width, initialFrame.size.height);
-    toVC.view.transform = CGAffineTransformMakeRotation(M_PI/2);
-    
-    [UIView animateWithDuration:1.0
-                          delay:0.0
-         usingSpringWithDamping:.5
-          initialSpringVelocity:10
-                        options:UIViewAnimationOptionCurveEaseIn
-     
-                     animations:^{
-                         
-                         //Setup the final parameters of the 2 views
-                         //the animation interpolates from the current parameters
-                         //to the next values.
-                         fromVC.view.transform = rotation;
-                         toVC.view.center = final_toVC_Center;
-                         toVC.view.transform = CGAffineTransformMakeRotation(0);
-                     } completion:^(BOOL finished) {
-                         
-                         //When the animation is completed call completeTransition
-                         [transitionContext completeTransition:YES];
-                         
-                     }];
-    
-    [transitionContext completeTransition:YES];
+    // if we are the from, then we are going to the modal
+    if ([fromViewController isKindOfClass:[self class]]) {
+        //Add 'to' view to the hierarchy with 0.0 scale
+        toViewController.view.transform = CGAffineTransformMakeTranslation(-320, 0.0);
+        [containerView insertSubview:toViewController.view aboveSubview:fromViewController.view];
+        
+        //Scale the 'to' view to to its final position
+        [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
+            toViewController.view.transform = CGAffineTransformMakeTranslation(0.0, 0.0);
+        } completion:^(BOOL finished) {
+            [transitionContext completeTransition:YES];
+        }];
+    } else { // dismiss the modal
+        //Add 'to' view to the hierarchy
+        [containerView insertSubview:toViewController.view belowSubview:fromViewController.view];
+        
+        //Scale the 'from' view down until it disappears
+        [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
+            fromViewController.view.transform = CGAffineTransformMakeTranslation(-320.0, 0.0);
+        } completion:^(BOOL finished) {
+            [[self eventTextField] setText:[singletonInstance eventText]];
+            
+            [transitionContext completeTransition:YES];
+        }];
+    }
 }
 
-// fancy transitions duration
-- (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
+// how long does this transition last
+-(NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {
-    return 1.0f;
+    return 0.4;
 }
 
+// set ourself as transition delegate for from and to controllers
+-(id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
+{
+    return self;
+}
+
+-(id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
+{
+    return self;
+}
+
+// save the user default
+- (void)onSave:(id)sender
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[singletonInstance eventText] forKey:@"EventText"];
+}
 @end

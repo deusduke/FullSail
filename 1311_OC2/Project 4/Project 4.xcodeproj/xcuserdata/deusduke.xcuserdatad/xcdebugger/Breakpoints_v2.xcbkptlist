@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Project 4/OCViewController.m"
-            timestampString = "406428237.802553"
+            filePath = "Project 4/OCAppSingleton.m"
+            timestampString = "406703447.673505"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "-handleSwipe:"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "-addEvent:andDate:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,29 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Project 4/OCViewController.m"
-            timestampString = "406428237.802553"
+            filePath = "Project 4/OCAppSingleton.m"
+            timestampString = "406703447.673505"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "-handleSwipe:"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "-getFormattedEventText:withDate:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project 4/OCAppSingleton.m"
+            timestampString = "406703447.673505"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-addEvent:andDate:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

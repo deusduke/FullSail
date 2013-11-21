@@ -9,12 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface OCViewController : UIViewController
-    <UIViewControllerTransitioningDelegate,
-    UIViewControllerAnimatedTransitioning>
+    <UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *swipeLabel;
 @property (weak, nonatomic) IBOutlet UITextView *eventTextField;
 @property (weak, nonatomic) IBOutlet UIButton *saveButton;
 @property (strong, nonatomic) UISwipeGestureRecognizer *swipeRecognizer;
+
+- (IBAction)onSave:(id)sender;
 
 @end
