@@ -64,4 +64,37 @@
     return self.model.objects.count;
 }
 
+- (void)onEditButtonPushed:(id)sender
+{
+    if (tableView.isEditing)
+    {
+        [[self editButton] setTitle:@"Edit"];
+        [tableView setEditing:NO animated:YES];
+    }
+    else
+    {
+        [[self editButton] setTitle:@"Done"];
+        [tableView setEditing:YES animated:YES];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (editingStyle) {
+        case UITableViewCellEditingStyleDelete:
+            [self.model.objects removeObjectAtIndex:indexPath.row];
+            [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    MDFObject* obj = [self.model.objects objectAtIndex:indexPath.row];
+    [[self navigationController] performSegueWithIdentifier:@"GameDetail" sender:self];
+}
+
 @end

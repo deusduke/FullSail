@@ -16,4 +16,6 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *editButton;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+- (IBAction)onEditButtonPushed:(id)sender;
+
 @end

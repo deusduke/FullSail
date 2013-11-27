@@ -40,7 +40,7 @@
     self.modelObject = object;
     
     [nameLabel setText:object.name];
-    [detailLabel setText:[NSString stringWithFormat:@"%f Million Units Sold", object.copiesSold]];
+    [detailLabel setText:[NSString stringWithFormat:@"%.02f Million Units Sold", object.copiesSold]];
 }
 
 @end

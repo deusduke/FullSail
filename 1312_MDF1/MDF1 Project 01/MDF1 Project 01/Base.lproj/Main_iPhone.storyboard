@@ -40,16 +40,42 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Best Selling Games" id="kso-B1-xRC">
-                        <barButtonItem key="rightBarButtonItem" title="Edit" id="OeQ-Ec-b5G"/>
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="OeQ-Ec-b5G">
+                            <connections>
+                                <action selector="onEditButtonPushed:" destination="Ec1-Lz-pDm" id="H7T-N0-lfW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="editButton" destination="OeQ-Ec-b5G" id="9Ih-od-nsL"/>
                         <outlet property="tableView" destination="b5B-50-ilD" id="dSf-dV-l26"/>
+                        <segue destination="Ud5-4j-SQg" kind="push" identifier="GameDetail" id="XV6-0z-E2U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4f-HJ-4bm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="348" y="-599"/>
+        </scene>
+        <!--View Controller - Game Title Here-->
+        <scene sceneID="Mkf-cX-kQp">
+            <objects>
+                <viewController id="Ud5-4j-SQg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z8k-cP-7h2"/>
+                        <viewControllerLayoutGuide type="bottom" id="A95-Es-FRG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ige-rc-YAN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Game Title Here" id="oGd-uw-5Ky">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="rQ4-OW-xSx"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qVd-aC-fQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813" y="-599"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
