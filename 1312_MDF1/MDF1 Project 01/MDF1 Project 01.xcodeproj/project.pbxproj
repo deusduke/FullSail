@@ -13,7 +13,6 @@
 		601A535618458B3B00F60DC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 601A535418458B3B00F60DC6 /* InfoPlist.strings */; };
 		601A535818458B3B00F60DC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A535718458B3B00F60DC6 /* main.m */; };
 		601A535C18458B3B00F60DC6 /* MDFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A535B18458B3B00F60DC6 /* MDFAppDelegate.m */; };
-		601A535F18458B3B00F60DC6 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601A535D18458B3B00F60DC6 /* Main_iPhone.storyboard */; };
 		601A536218458B3B00F60DC6 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601A536018458B3B00F60DC6 /* Main_iPad.storyboard */; };
 		601A536518458B3B00F60DC6 /* MDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A536418458B3B00F60DC6 /* MDFViewController.m */; };
 		601A536718458B3B00F60DC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601A536618458B3B00F60DC6 /* Images.xcassets */; };
@@ -22,10 +21,13 @@
 		601A537018458B3B00F60DC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601A534F18458B3B00F60DC6 /* UIKit.framework */; };
 		601A537818458B3B00F60DC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 601A537618458B3B00F60DC6 /* InfoPlist.strings */; };
 		601A537A18458B3B00F60DC6 /* MDF1_Project_01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A537918458B3B00F60DC6 /* MDF1_Project_01Tests.m */; };
+		609658D6184BC1C1009D593B /* MDFGameDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609658D5184BC1C1009D593B /* MDFGameDetailsViewController.m */; };
+		609658D9184C1785009D593B /* MDFAppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609658D8184C1785009D593B /* MDFAppInfoViewController.m */; };
 		60C9C2FF18459F9B0031B1B0 /* MDFModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C9C2FE18459F9B0031B1B0 /* MDFModel.m */; };
 		60C9C30218459FBD0031B1B0 /* MDFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C9C30118459FBD0031B1B0 /* MDFObject.m */; };
 		60C9C3051845BD4E0031B1B0 /* MDFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C9C3041845BD4E0031B1B0 /* MDFCell.m */; };
 		60C9C3071845C7F80031B1B0 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60C9C3061845C7F80031B1B0 /* Cell.xib */; };
+		60C9C30A1846B28E0031B1B0 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C9C3081846B28E0031B1B0 /* Main_iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +51,6 @@
 		601A535918458B3B00F60DC6 /* MDF1 Project 01-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDF1 Project 01-Prefix.pch"; sourceTree = "<group>"; };
 		601A535A18458B3B00F60DC6 /* MDFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFAppDelegate.h; sourceTree = "<group>"; };
 		601A535B18458B3B00F60DC6 /* MDFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFAppDelegate.m; sourceTree = "<group>"; };
-		601A535E18458B3B00F60DC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		601A536118458B3B00F60DC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		601A536318458B3B00F60DC6 /* MDFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFViewController.h; sourceTree = "<group>"; };
 		601A536418458B3B00F60DC6 /* MDFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFViewController.m; sourceTree = "<group>"; };
@@ -59,6 +60,10 @@
 		601A537518458B3B00F60DC6 /* MDF1 Project 01Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MDF1 Project 01Tests-Info.plist"; sourceTree = "<group>"; };
 		601A537718458B3B00F60DC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		601A537918458B3B00F60DC6 /* MDF1_Project_01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDF1_Project_01Tests.m; sourceTree = "<group>"; };
+		609658D4184BC1C1009D593B /* MDFGameDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFGameDetailsViewController.h; sourceTree = "<group>"; };
+		609658D5184BC1C1009D593B /* MDFGameDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFGameDetailsViewController.m; sourceTree = "<group>"; };
+		609658D7184C1785009D593B /* MDFAppInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFAppInfoViewController.h; sourceTree = "<group>"; };
+		609658D8184C1785009D593B /* MDFAppInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFAppInfoViewController.m; sourceTree = "<group>"; };
 		60C9C2FD18459F9B0031B1B0 /* MDFModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFModel.h; sourceTree = "<group>"; };
 		60C9C2FE18459F9B0031B1B0 /* MDFModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFModel.m; sourceTree = "<group>"; };
 		60C9C30018459FBD0031B1B0 /* MDFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFObject.h; sourceTree = "<group>"; };
@@ -66,6 +71,7 @@
 		60C9C3031845BD4E0031B1B0 /* MDFCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFCell.h; sourceTree = "<group>"; };
 		60C9C3041845BD4E0031B1B0 /* MDFCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFCell.m; sourceTree = "<group>"; };
 		60C9C3061845C7F80031B1B0 /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
+		60C9C3091846B28E0031B1B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "MDF1 Project 01/Base.lproj/Main_iPhone.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,21 +131,12 @@
 		601A535118458B3B00F60DC6 /* MDF1 Project 01 */ = {
 			isa = PBXGroup;
 			children = (
-				601A535A18458B3B00F60DC6 /* MDFAppDelegate.h */,
-				601A535B18458B3B00F60DC6 /* MDFAppDelegate.m */,
-				601A535D18458B3B00F60DC6 /* Main_iPhone.storyboard */,
 				60C9C3061845C7F80031B1B0 /* Cell.xib */,
-				601A536018458B3B00F60DC6 /* Main_iPad.storyboard */,
-				601A536318458B3B00F60DC6 /* MDFViewController.h */,
-				601A536418458B3B00F60DC6 /* MDFViewController.m */,
 				601A536618458B3B00F60DC6 /* Images.xcassets */,
+				601A536018458B3B00F60DC6 /* Main_iPad.storyboard */,
+				60C9C3081846B28E0031B1B0 /* Main_iPhone.storyboard */,
+				609658DA184C1E5A009D593B /* Code */,
 				601A535218458B3B00F60DC6 /* Supporting Files */,
-				60C9C2FD18459F9B0031B1B0 /* MDFModel.h */,
-				60C9C2FE18459F9B0031B1B0 /* MDFModel.m */,
-				60C9C30018459FBD0031B1B0 /* MDFObject.h */,
-				60C9C30118459FBD0031B1B0 /* MDFObject.m */,
-				60C9C3031845BD4E0031B1B0 /* MDFCell.h */,
-				60C9C3041845BD4E0031B1B0 /* MDFCell.m */,
 			);
 			path = "MDF1 Project 01";
 			sourceTree = "<group>";
@@ -171,6 +168,27 @@
 				601A537618458B3B00F60DC6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		609658DA184C1E5A009D593B /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				601A535A18458B3B00F60DC6 /* MDFAppDelegate.h */,
+				601A535B18458B3B00F60DC6 /* MDFAppDelegate.m */,
+				609658D7184C1785009D593B /* MDFAppInfoViewController.h */,
+				609658D8184C1785009D593B /* MDFAppInfoViewController.m */,
+				60C9C3031845BD4E0031B1B0 /* MDFCell.h */,
+				60C9C3041845BD4E0031B1B0 /* MDFCell.m */,
+				609658D4184BC1C1009D593B /* MDFGameDetailsViewController.h */,
+				609658D5184BC1C1009D593B /* MDFGameDetailsViewController.m */,
+				60C9C2FD18459F9B0031B1B0 /* MDFModel.h */,
+				60C9C2FE18459F9B0031B1B0 /* MDFModel.m */,
+				60C9C30018459FBD0031B1B0 /* MDFObject.h */,
+				60C9C30118459FBD0031B1B0 /* MDFObject.m */,
+				601A536318458B3B00F60DC6 /* MDFViewController.h */,
+				601A536418458B3B00F60DC6 /* MDFViewController.m */,
+			);
+			name = Code;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,8 +270,8 @@
 			files = (
 				601A536218458B3B00F60DC6 /* Main_iPad.storyboard in Resources */,
 				60C9C3071845C7F80031B1B0 /* Cell.xib in Resources */,
+				60C9C30A1846B28E0031B1B0 /* Main_iPhone.storyboard in Resources */,
 				601A536718458B3B00F60DC6 /* Images.xcassets in Resources */,
-				601A535F18458B3B00F60DC6 /* Main_iPhone.storyboard in Resources */,
 				601A535618458B3B00F60DC6 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				609658D9184C1785009D593B /* MDFAppInfoViewController.m in Sources */,
 				601A535C18458B3B00F60DC6 /* MDFAppDelegate.m in Sources */,
+				609658D6184BC1C1009D593B /* MDFGameDetailsViewController.m in Sources */,
 				60C9C2FF18459F9B0031B1B0 /* MDFModel.m in Sources */,
 				601A535818458B3B00F60DC6 /* main.m in Sources */,
 				60C9C30218459FBD0031B1B0 /* MDFObject.m in Sources */,
@@ -309,14 +329,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		601A535D18458B3B00F60DC6 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				601A535E18458B3B00F60DC6 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
 		601A536018458B3B00F60DC6 /* Main_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -331,6 +343,15 @@
 				601A537718458B3B00F60DC6 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		60C9C3081846B28E0031B1B0 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60C9C3091846B28E0031B1B0 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

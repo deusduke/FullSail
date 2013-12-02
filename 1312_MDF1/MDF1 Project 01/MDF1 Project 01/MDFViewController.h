@@ -10,11 +10,10 @@
 #import "MDFObject.h"
 #import "MDFModel.h"
 
-@interface MDFViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface MDFViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, retain) MDFModel *model;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *editButton;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 - (IBAction)onEditButtonPushed:(id)sender;
 

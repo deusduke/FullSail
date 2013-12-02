@@ -15,5 +15,9 @@
 @property (nonatomic) float copiesSold;
 @property (strong, nonatomic) NSString* platform;
 @property (strong, nonatomic) NSString* description;
+@property (strong, nonatomic) NSString* imageName;
+
+- (UIImage*) ImageForThumbnail;
+- (UIImage*) ImageForDetail;
 
 @end

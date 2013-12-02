@@ -41,6 +41,7 @@
     
     [nameLabel setText:object.name];
     [detailLabel setText:[NSString stringWithFormat:@"%.02f Million Units Sold", object.copiesSold]];
+    [image setImage:[object ImageForThumbnail]];
 }
 
 @end

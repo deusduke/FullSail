@@ -9,6 +9,7 @@
 #import "MDFViewController.h"
 #import "MDFCell.h"
 #import "MDFObject.h"
+#import "MDFGameDetailsViewController.h"
 
 @interface MDFViewController ()
 
@@ -16,7 +17,7 @@
 
 @implementation MDFViewController
 
-@synthesize model, tableView;
+@synthesize model;
 
 - (void)viewDidLoad
 {
@@ -26,9 +27,6 @@
     // initialize the model
     model = [[MDFModel alloc] init];
     [model initialize];
-    
-    [tableView setDelegate:self];
-    [tableView setDataSource:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,7 +40,7 @@
     NSString* identifier = @"MDFCell";
     
     // try to get reusable cell
-    MDFCell* cell = (MDFCell*) [self.tableView dequeueReusableCellWithIdentifier:identifier];
+    MDFCell* cell = (MDFCell*) [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
     // if not found make a new one
     if (cell == nil)
@@ -66,20 +64,22 @@
 
 - (void)onEditButtonPushed:(id)sender
 {
-    if (tableView.isEditing)
+    // handle edit mode switching
+    if (self.tableView.isEditing)
     {
         [[self editButton] setTitle:@"Edit"];
-        [tableView setEditing:NO animated:YES];
+        [self.tableView setEditing:NO animated:YES];
     }
     else
     {
         [[self editButton] setTitle:@"Done"];
-        [tableView setEditing:YES animated:YES];
+        [self.tableView setEditing:YES animated:YES];
     }
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // handles deletion
     switch (editingStyle) {
         case UITableViewCellEditingStyleDelete:
             [self.model.objects removeObjectAtIndex:indexPath.row];
@@ -91,10 +91,26 @@
     }
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    MDFObject* obj = [self.model.objects objectAtIndex:indexPath.row];
-    [[self navigationController] performSegueWithIdentifier:@"GameDetail" sender:self];
+    return 84;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"GameDetail"])
+    {
+        // pass the model object to the controller
+        MDFGameDetailsViewController* controller = [segue destinationViewController];
+        
+        // get model object from array and send to details view controller
+        NSIndexPath* selectedIndexPath = [self.tableView indexPathForSelectedRow];
+        [controller setModelObject:[self.model.objects objectAtIndex:[selectedIndexPath row]]];
+    }
+    else if ([segue.identifier isEqualToString:@"AppInfo"])
+    {
+        // do stuff if necessary
+    }
 }
 
 @end

@@ -8,8 +8,32 @@
 
 #import "MDFObject.h"
 
+@interface MDFObject()
+
+- (UIImage*) ImageWithName: (NSString*) theName;
+
+@end
+
 @implementation MDFObject
 
-@synthesize name, yearReleased, copiesSold, platform, description;
+@synthesize name, yearReleased, copiesSold, platform, description, imageName;
+
+- (UIImage *)ImageWithName:(NSString *)theName
+{
+    // simply returns the asset with the given name
+    return [UIImage imageNamed:theName];
+}
+
+- (UIImage*)ImageForThumbnail
+{
+    // get the thumbnail image
+    return [self ImageWithName:[self.imageName stringByAppendingString:@"_thumbnail"]];
+}
+
+- (UIImage*)ImageForDetail
+{
+    // get the detail image
+    return [self ImageWithName:[self.imageName stringByAppendingString:@"_detail"]];
+}
 
 @end
