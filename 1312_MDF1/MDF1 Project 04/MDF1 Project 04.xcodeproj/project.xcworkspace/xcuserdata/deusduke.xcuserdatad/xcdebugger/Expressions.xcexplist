@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[MDFSearchResultsViewController connection:didReceiveData:]:MDFSearchResultsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "searchData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MDFSearchResultsViewController connectionDidFinishLoading:]:MDFSearchResultsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "model.rawXML">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

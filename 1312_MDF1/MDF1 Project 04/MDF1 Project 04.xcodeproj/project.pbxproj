@@ -15,14 +15,17 @@
 		60C7412E185E64C30020CEB1 /* MDFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C7412D185E64C30020CEB1 /* MDFAppDelegate.m */; };
 		60C74131185E64C30020CEB1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C7412F185E64C30020CEB1 /* Main_iPhone.storyboard */; };
 		60C74134185E64C30020CEB1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C74132185E64C30020CEB1 /* Main_iPad.storyboard */; };
-		60C74137185E64C30020CEB1 /* MDFFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C74136185E64C30020CEB1 /* MDFFirstViewController.m */; };
-		60C7413A185E64C30020CEB1 /* MDFSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C74139185E64C30020CEB1 /* MDFSecondViewController.m */; };
 		60C7413C185E64C30020CEB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60C7413B185E64C30020CEB1 /* Images.xcassets */; };
 		60C74143185E64C30020CEB1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C74142185E64C30020CEB1 /* XCTest.framework */; };
 		60C74144185E64C30020CEB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C7411D185E64C30020CEB1 /* Foundation.framework */; };
 		60C74145185E64C30020CEB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C74121185E64C30020CEB1 /* UIKit.framework */; };
 		60C7414D185E64C30020CEB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60C7414B185E64C30020CEB1 /* InfoPlist.strings */; };
 		60C7414F185E64C30020CEB1 /* MDF1_Project_04Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C7414E185E64C30020CEB1 /* MDF1_Project_04Tests.m */; };
+		60C7415A185E670C0020CEB1 /* MDFRawXMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C74159185E670C0020CEB1 /* MDFRawXMLViewController.m */; };
+		60C7415D185E740A0020CEB1 /* MDFSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C7415C185E740A0020CEB1 /* MDFSearchResult.m */; };
+		60C74160185E766F0020CEB1 /* MDFModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C7415F185E766F0020CEB1 /* MDFModel.m */; };
+		60C74163185E9BBE0020CEB1 /* MDFSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C74162185E9BBE0020CEB1 /* MDFSearchResultsViewController.m */; };
+		60C74166185EBF890020CEB1 /* MDFDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C74165185EBF890020CEB1 /* MDFDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,16 +51,22 @@
 		60C7412D185E64C30020CEB1 /* MDFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFAppDelegate.m; sourceTree = "<group>"; };
 		60C74130185E64C30020CEB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		60C74133185E64C30020CEB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		60C74135185E64C30020CEB1 /* MDFFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFFirstViewController.h; sourceTree = "<group>"; };
-		60C74136185E64C30020CEB1 /* MDFFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFFirstViewController.m; sourceTree = "<group>"; };
-		60C74138185E64C30020CEB1 /* MDFSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFSecondViewController.h; sourceTree = "<group>"; };
-		60C74139185E64C30020CEB1 /* MDFSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFSecondViewController.m; sourceTree = "<group>"; };
 		60C7413B185E64C30020CEB1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		60C74141185E64C30020CEB1 /* MDF1 Project 04Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MDF1 Project 04Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C74142185E64C30020CEB1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		60C7414A185E64C30020CEB1 /* MDF1 Project 04Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MDF1 Project 04Tests-Info.plist"; sourceTree = "<group>"; };
 		60C7414C185E64C30020CEB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60C7414E185E64C30020CEB1 /* MDF1_Project_04Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDF1_Project_04Tests.m; sourceTree = "<group>"; };
+		60C74158185E670C0020CEB1 /* MDFRawXMLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFRawXMLViewController.h; sourceTree = "<group>"; };
+		60C74159185E670C0020CEB1 /* MDFRawXMLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFRawXMLViewController.m; sourceTree = "<group>"; };
+		60C7415B185E740A0020CEB1 /* MDFSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFSearchResult.h; sourceTree = "<group>"; };
+		60C7415C185E740A0020CEB1 /* MDFSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFSearchResult.m; sourceTree = "<group>"; };
+		60C7415E185E766F0020CEB1 /* MDFModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFModel.h; sourceTree = "<group>"; };
+		60C7415F185E766F0020CEB1 /* MDFModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFModel.m; sourceTree = "<group>"; };
+		60C74161185E9BBE0020CEB1 /* MDFSearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFSearchResultsViewController.h; sourceTree = "<group>"; };
+		60C74162185E9BBE0020CEB1 /* MDFSearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFSearchResultsViewController.m; sourceTree = "<group>"; };
+		60C74164185EBF890020CEB1 /* MDFDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFDetailViewController.h; sourceTree = "<group>"; };
+		60C74165185EBF890020CEB1 /* MDFDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,15 +126,21 @@
 		60C74123185E64C30020CEB1 /* MDF1 Project 04 */ = {
 			isa = PBXGroup;
 			children = (
+				60C7413B185E64C30020CEB1 /* Images.xcassets */,
+				60C74132185E64C30020CEB1 /* Main_iPad.storyboard */,
+				60C7412F185E64C30020CEB1 /* Main_iPhone.storyboard */,
 				60C7412C185E64C30020CEB1 /* MDFAppDelegate.h */,
 				60C7412D185E64C30020CEB1 /* MDFAppDelegate.m */,
-				60C7412F185E64C30020CEB1 /* Main_iPhone.storyboard */,
-				60C74132185E64C30020CEB1 /* Main_iPad.storyboard */,
-				60C74135185E64C30020CEB1 /* MDFFirstViewController.h */,
-				60C74136185E64C30020CEB1 /* MDFFirstViewController.m */,
-				60C74138185E64C30020CEB1 /* MDFSecondViewController.h */,
-				60C74139185E64C30020CEB1 /* MDFSecondViewController.m */,
-				60C7413B185E64C30020CEB1 /* Images.xcassets */,
+				60C74164185EBF890020CEB1 /* MDFDetailViewController.h */,
+				60C74165185EBF890020CEB1 /* MDFDetailViewController.m */,
+				60C7415E185E766F0020CEB1 /* MDFModel.h */,
+				60C7415F185E766F0020CEB1 /* MDFModel.m */,
+				60C74158185E670C0020CEB1 /* MDFRawXMLViewController.h */,
+				60C74159185E670C0020CEB1 /* MDFRawXMLViewController.m */,
+				60C7415B185E740A0020CEB1 /* MDFSearchResult.h */,
+				60C7415C185E740A0020CEB1 /* MDFSearchResult.m */,
+				60C74161185E9BBE0020CEB1 /* MDFSearchResultsViewController.h */,
+				60C74162185E9BBE0020CEB1 /* MDFSearchResultsViewController.m */,
 				60C74124185E64C30020CEB1 /* Supporting Files */,
 			);
 			path = "MDF1 Project 04";
@@ -208,6 +223,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "DEUS Enterprises";
 				TargetAttributes = {
+					60C74119185E64C20020CEB1 = {
+						DevelopmentTeam = LXPCC5U83M;
+					};
 					60C74140185E64C30020CEB1 = {
 						TestTargetID = 60C74119185E64C20020CEB1;
 					};
@@ -259,10 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60C7415D185E740A0020CEB1 /* MDFSearchResult.m in Sources */,
+				60C74166185EBF890020CEB1 /* MDFDetailViewController.m in Sources */,
+				60C74160185E766F0020CEB1 /* MDFModel.m in Sources */,
+				60C74163185E9BBE0020CEB1 /* MDFSearchResultsViewController.m in Sources */,
 				60C7412E185E64C30020CEB1 /* MDFAppDelegate.m in Sources */,
+				60C7415A185E670C0020CEB1 /* MDFRawXMLViewController.m in Sources */,
 				60C7412A185E64C30020CEB1 /* main.m in Sources */,
-				60C7413A185E64C30020CEB1 /* MDFSecondViewController.m in Sources */,
-				60C74137185E64C30020CEB1 /* MDFFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDF1 Project 04/MDF1 Project 04-Prefix.pch";
 				INFOPLIST_FILE = "MDF1 Project 04/MDF1 Project 04-Info.plist";
@@ -412,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDF1 Project 04/MDF1 Project 04-Prefix.pch";
 				INFOPLIST_FILE = "MDF1 Project 04/MDF1 Project 04-Info.plist";
