@@ -94,7 +94,11 @@ static MDFModel* instance;
         }
         else if ([elementName isEqualToString:@"thumbnailImage"])
         {
-            currentResultForParse.thumbnailImage = currentItemString;
+            // set the thumbnail
+            NSURL *mUrl = [NSURL URLWithString:currentItemString];
+            NSData *mData = [NSData dataWithContentsOfURL:mUrl];
+            UIImage *mImg = [[UIImage alloc] initWithData:mData];
+            currentResultForParse.thumbnailImage = mImg;
         }
         else if ([elementName isEqualToString:@"availableOnline"])
         {

@@ -103,13 +103,7 @@
     MDFSearchResult* sr = [model.searchResults objectAtIndex:indexPath.row];
     cell.textLabel.text = sr.name;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"$%.02f", sr.price];
-    
-    // set the thumbnail
-    NSURL *mUrl = [NSURL URLWithString:sr.thumbnailImage];
-    NSData *mData = [NSData dataWithContentsOfURL:mUrl];
-    UIImage *mImg = [[UIImage alloc] initWithData:mData];
-    
-    cell.imageView.image = mImg;
+    cell.imageView.image = sr.thumbnailImage;
     
     return cell;
 }

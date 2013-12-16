@@ -13,7 +13,7 @@
 @property (strong, nonatomic) NSString* name;
 @property (strong, nonatomic) NSString* shortDescription;
 @property (strong, nonatomic) NSString* categoryPath;
-@property (strong, nonatomic) NSString* thumbnailImage;
+@property (strong, nonatomic) UIImage* thumbnailImage;
 @property (nonatomic) bool availableOnline;
 @property (nonatomic) float price;
 @property (nonatomic) float shipCost;
