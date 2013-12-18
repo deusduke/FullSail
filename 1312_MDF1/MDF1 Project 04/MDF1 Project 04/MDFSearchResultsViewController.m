@@ -50,6 +50,9 @@
         
         self.searchData = [NSMutableData data];
     }
+    
+    // handle tab switch
+    self.tabBarController.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -111,6 +114,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     model.currentSearchResult = [model.searchResults objectAtIndex:indexPath.row];
+}
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    // reload on come back to refresh images
+    if (tabBarController.selectedIndex == 0)
+        [self.tableView reloadRowsAtIndexPaths:self.tableView.indexPathsForVisibleRows withRowAnimation:UITableViewRowAnimationNone];
 }
 
 @end

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MDFModel.h"
 
-@interface MDFSearchResultsViewController : UITableViewController <NSURLConnectionDataDelegate>
+@interface MDFSearchResultsViewController : UITableViewController <NSURLConnectionDataDelegate, UITabBarControllerDelegate>
 
 @property (nonatomic, retain) NSURLRequest* request;
 @property (nonatomic, retain) NSURL *url;

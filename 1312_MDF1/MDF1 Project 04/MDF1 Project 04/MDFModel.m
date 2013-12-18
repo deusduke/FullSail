@@ -94,11 +94,19 @@ static MDFModel* instance;
         }
         else if ([elementName isEqualToString:@"thumbnailImage"])
         {
-            // set the thumbnail
+            // set the thumbnail asynchronously using blocks
+            // concept from http://natashatherobot.com/ios-how-to-download-images-asynchronously-make-uitableview-scroll-fast/
             NSURL *mUrl = [NSURL URLWithString:currentItemString];
-            NSData *mData = [NSData dataWithContentsOfURL:mUrl];
-            UIImage *mImg = [[UIImage alloc] initWithData:mData];
-            currentResultForParse.thumbnailImage = mImg;
+            NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:mUrl];
+            MDFSearchResult *myResult = currentResultForParse;
+            [NSURLConnection sendAsynchronousRequest:request
+                                               queue:[NSOperationQueue mainQueue]
+                                   completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+                if (!error)
+                {
+                    myResult.thumbnailImage = [[UIImage alloc] initWithData:data];
+                }
+            }];
         }
         else if ([elementName isEqualToString:@"availableOnline"])
         {

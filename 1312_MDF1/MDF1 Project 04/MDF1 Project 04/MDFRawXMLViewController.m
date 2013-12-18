@@ -29,9 +29,7 @@
     [super viewDidLoad];
     
     model = [[MDFModel alloc] init];
-	
-    // show the data in the model
-    [self.textView setText:model.rawXML];
+    self.textView.text = model.rawXML;
 }
 
 - (void)didReceiveMemoryWarning
