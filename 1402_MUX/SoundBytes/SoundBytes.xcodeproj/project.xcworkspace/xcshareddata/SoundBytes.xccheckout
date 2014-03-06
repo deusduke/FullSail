@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7394C348-71CA-4AD6-9D3E-07C0263C36DD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SoundBytes</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4C2F46F7-846B-4293-B254-1F8DCA9CC402</key>
+		<string>ssh://github.com/deusduke/FullSail.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>1402_MUX/SoundBytes/SoundBytes.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4C2F46F7-846B-4293-B254-1F8DCA9CC402</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/deusduke/FullSail.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4C2F46F7-846B-4293-B254-1F8DCA9CC402</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4C2F46F7-846B-4293-B254-1F8DCA9CC402</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Repo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
