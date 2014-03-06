@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MDFViewController : UIViewController
+@interface MDFMainViewController : UIViewController
+
+@property (strong, nonatomic) ACAccount* currentAccount;
+
+-(void) getTwitterLogin;
+-(void) getTweets;
 
 @end
