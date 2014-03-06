@@ -15,7 +15,7 @@
 		60E15B8A18C81A990000CFFD /* MDFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E15B8918C81A990000CFFD /* MDFAppDelegate.m */; };
 		60E15B8D18C81A990000CFFD /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E15B8B18C81A990000CFFD /* Main_iPhone.storyboard */; };
 		60E15B9018C81A990000CFFD /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E15B8E18C81A990000CFFD /* Main_iPad.storyboard */; };
-		60E15B9318C81A990000CFFD /* MDFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E15B9218C81A990000CFFD /* MDFMainViewController.m */; };
+		60E15B9318C81A990000CFFD /* MDFMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E15B9218C81A990000CFFD /* MDFMainTableViewController.m */; };
 		60E15B9518C81A990000CFFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E15B9418C81A990000CFFD /* Images.xcassets */; };
 		60E15B9C18C81A990000CFFD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E15B9B18C81A990000CFFD /* XCTest.framework */; };
 		60E15B9D18C81A990000CFFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E15B7918C81A990000CFFD /* Foundation.framework */; };
@@ -24,6 +24,7 @@
 		60E15BA818C81A990000CFFD /* MDF_Project_01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E15BA718C81A990000CFFD /* MDF_Project_01Tests.m */; };
 		60E15BB418C81C510000CFFD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E15BB318C81C510000CFFD /* Accounts.framework */; };
 		60E15BB518C83A230000CFFD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E15BB118C81C490000CFFD /* Social.framework */; };
+		60E15BB818C8D74E0000CFFD /* MDFTwitterTableViewCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E15BB718C8D74E0000CFFD /* MDFTwitterTableViewCellController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +50,8 @@
 		60E15B8918C81A990000CFFD /* MDFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFAppDelegate.m; sourceTree = "<group>"; };
 		60E15B8C18C81A990000CFFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		60E15B8F18C81A990000CFFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		60E15B9118C81A990000CFFD /* MDFMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFMainViewController.h; sourceTree = "<group>"; };
-		60E15B9218C81A990000CFFD /* MDFMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFMainViewController.m; sourceTree = "<group>"; };
+		60E15B9118C81A990000CFFD /* MDFMainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFMainTableViewController.h; sourceTree = "<group>"; };
+		60E15B9218C81A990000CFFD /* MDFMainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFMainTableViewController.m; sourceTree = "<group>"; };
 		60E15B9418C81A990000CFFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		60E15B9A18C81A990000CFFD /* MDF Project 01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MDF Project 01Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E15B9B18C81A990000CFFD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,6 +60,8 @@
 		60E15BA718C81A990000CFFD /* MDF_Project_01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDF_Project_01Tests.m; sourceTree = "<group>"; };
 		60E15BB118C81C490000CFFD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		60E15BB318C81C510000CFFD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		60E15BB618C8D74E0000CFFD /* MDFTwitterTableViewCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFTwitterTableViewCellController.h; sourceTree = "<group>"; };
+		60E15BB718C8D74E0000CFFD /* MDFTwitterTableViewCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFTwitterTableViewCellController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,13 +125,15 @@
 		60E15B7F18C81A990000CFFD /* MDF Project 01 */ = {
 			isa = PBXGroup;
 			children = (
+				60E15B9418C81A990000CFFD /* Images.xcassets */,
+				60E15B8E18C81A990000CFFD /* Main_iPad.storyboard */,
+				60E15B8B18C81A990000CFFD /* Main_iPhone.storyboard */,
 				60E15B8818C81A990000CFFD /* MDFAppDelegate.h */,
 				60E15B8918C81A990000CFFD /* MDFAppDelegate.m */,
-				60E15B8B18C81A990000CFFD /* Main_iPhone.storyboard */,
-				60E15B8E18C81A990000CFFD /* Main_iPad.storyboard */,
-				60E15B9118C81A990000CFFD /* MDFMainViewController.h */,
-				60E15B9218C81A990000CFFD /* MDFMainViewController.m */,
-				60E15B9418C81A990000CFFD /* Images.xcassets */,
+				60E15B9118C81A990000CFFD /* MDFMainTableViewController.h */,
+				60E15B9218C81A990000CFFD /* MDFMainTableViewController.m */,
+				60E15BB618C8D74E0000CFFD /* MDFTwitterTableViewCellController.h */,
+				60E15BB718C8D74E0000CFFD /* MDFTwitterTableViewCellController.m */,
 				60E15B8018C81A990000CFFD /* Supporting Files */,
 			);
 			path = "MDF Project 01";
@@ -264,7 +269,8 @@
 			files = (
 				60E15B8A18C81A990000CFFD /* MDFAppDelegate.m in Sources */,
 				60E15B8618C81A990000CFFD /* main.m in Sources */,
-				60E15B9318C81A990000CFFD /* MDFMainViewController.m in Sources */,
+				60E15B9318C81A990000CFFD /* MDFMainTableViewController.m in Sources */,
+				60E15BB818C8D74E0000CFFD /* MDFTwitterTableViewCellController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

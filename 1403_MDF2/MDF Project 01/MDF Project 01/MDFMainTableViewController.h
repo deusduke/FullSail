@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MDFMainViewController : UIViewController
+@interface MDFMainTableViewController : UITableViewController
 
-@property (strong, nonatomic) ACAccount* currentAccount;
+@property (weak, nonatomic) ACAccount* currentAccount;
+@property (weak, nonatomic) NSArray* twitterFeed;
 
 -(void) getTwitterLogin;
 -(void) getTweets;
