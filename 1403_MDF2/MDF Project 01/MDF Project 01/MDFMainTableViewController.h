@@ -10,10 +10,12 @@
 
 @interface MDFMainTableViewController : UITableViewController
 
-@property (weak, nonatomic) ACAccount* currentAccount;
-@property (weak, nonatomic) NSArray* twitterFeed;
+@property (strong, nonatomic) ACAccount* currentAccount;
+@property (strong, nonatomic) NSArray* twitterFeed;
 
 -(void) getTwitterLogin;
 -(void) getTweets;
+
+-(IBAction)refreshTweets:(id)sender;
 
 @end

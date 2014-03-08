@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AsyncImageView.h"
 
 @interface MDFTwitterTableViewCellController : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel* tweetDateLabel;
 @property (weak, nonatomic) IBOutlet UILabel* tweetTextLabel;
-@property (weak, nonatomic) IBOutlet UIImage* tweetIconImage;
+@property (weak, nonatomic) IBOutlet AsyncImageView* tweetIconImage;
 
 @end

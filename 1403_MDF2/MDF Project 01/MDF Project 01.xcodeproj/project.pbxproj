@@ -25,6 +25,8 @@
 		60E15BB418C81C510000CFFD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E15BB318C81C510000CFFD /* Accounts.framework */; };
 		60E15BB518C83A230000CFFD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E15BB118C81C490000CFFD /* Social.framework */; };
 		60E15BB818C8D74E0000CFFD /* MDFTwitterTableViewCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E15BB718C8D74E0000CFFD /* MDFTwitterTableViewCellController.m */; };
+		60E15BBB18CABE030000CFFD /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E15BBA18CABE030000CFFD /* AsyncImageView.m */; };
+		60E15BBE18CAC7A40000CFFD /* MDFTweetDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E15BBD18CAC7A40000CFFD /* MDFTweetDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,10 @@
 		60E15BB318C81C510000CFFD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		60E15BB618C8D74E0000CFFD /* MDFTwitterTableViewCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFTwitterTableViewCellController.h; sourceTree = "<group>"; };
 		60E15BB718C8D74E0000CFFD /* MDFTwitterTableViewCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFTwitterTableViewCellController.m; sourceTree = "<group>"; };
+		60E15BB918CABE030000CFFD /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncImageView.h; path = "../../AsyncImageView-master/AsyncImageView/AsyncImageView.h"; sourceTree = "<group>"; };
+		60E15BBA18CABE030000CFFD /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncImageView.m; path = "../../AsyncImageView-master/AsyncImageView/AsyncImageView.m"; sourceTree = "<group>"; };
+		60E15BBC18CAC7A40000CFFD /* MDFTweetDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFTweetDetailViewController.h; sourceTree = "<group>"; };
+		60E15BBD18CAC7A40000CFFD /* MDFTweetDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFTweetDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,8 @@
 		60E15B7F18C81A990000CFFD /* MDF Project 01 */ = {
 			isa = PBXGroup;
 			children = (
+				60E15BB918CABE030000CFFD /* AsyncImageView.h */,
+				60E15BBA18CABE030000CFFD /* AsyncImageView.m */,
 				60E15B9418C81A990000CFFD /* Images.xcassets */,
 				60E15B8E18C81A990000CFFD /* Main_iPad.storyboard */,
 				60E15B8B18C81A990000CFFD /* Main_iPhone.storyboard */,
@@ -135,6 +143,8 @@
 				60E15BB618C8D74E0000CFFD /* MDFTwitterTableViewCellController.h */,
 				60E15BB718C8D74E0000CFFD /* MDFTwitterTableViewCellController.m */,
 				60E15B8018C81A990000CFFD /* Supporting Files */,
+				60E15BBC18CAC7A40000CFFD /* MDFTweetDetailViewController.h */,
+				60E15BBD18CAC7A40000CFFD /* MDFTweetDetailViewController.m */,
 			);
 			path = "MDF Project 01";
 			sourceTree = "<group>";
@@ -268,7 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				60E15B8A18C81A990000CFFD /* MDFAppDelegate.m in Sources */,
+				60E15BBB18CABE030000CFFD /* AsyncImageView.m in Sources */,
 				60E15B8618C81A990000CFFD /* main.m in Sources */,
+				60E15BBE18CAC7A40000CFFD /* MDFTweetDetailViewController.m in Sources */,
 				60E15B9318C81A990000CFFD /* MDFMainTableViewController.m in Sources */,
 				60E15BB818C8D74E0000CFFD /* MDFTwitterTableViewCellController.m in Sources */,
 			);

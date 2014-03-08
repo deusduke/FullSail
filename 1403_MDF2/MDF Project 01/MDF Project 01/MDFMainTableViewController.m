@@ -10,6 +10,7 @@
 #import <Social/Social.h>
 #import "MDFMainTableViewController.h"
 #import "MDFTwitterTableViewCellController.h"
+#import "MDFTweetDetailViewController.h"
 
 @interface MDFMainTableViewController ()
 
@@ -22,6 +23,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     
     // wait for the account to be retrieved
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
@@ -96,11 +100,14 @@
             
             if (twitterFeed != nil) {
                 NSLog(@"Timeline Response: %@\n", twitterFeed);
+                [[self tableView] reloadData];
             }
             else {
                 // JSON deserialization failed
                 NSLog(@"JSON Error: %@", [jsonError localizedDescription]);
             }
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"TweetsLoaded" object:self];
         }
         else {
             // Log the server response on error
@@ -139,7 +146,24 @@
     MDFTwitterTableViewCellController *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     if (cell != nil) {
-        
+        NSDictionary* tweetDict = [twitterFeed objectAtIndex:indexPath.row];
+        if (tweetDict != nil) {
+            cell.tweetDateLabel.text = [tweetDict objectForKey:@"created_at"];
+            cell.tweetTextLabel.text = [tweetDict objectForKey:@"text"];
+            
+            // set placeholder
+            cell.tweetIconImage.image = [UIImage imageNamed: @"twitter_bird.png"];
+            
+            // set remote image url
+            cell.tweetIconImage.showActivityIndicator = true;
+            NSDictionary* user = [tweetDict objectForKey:@"user"];
+            NSString* url = [user objectForKey:@"profile_image_url"];
+            if (url != nil)
+                cell.tweetIconImage.imageURL = [NSURL URLWithString:url];
+        }
+        else {
+            NSLog(@"Could not get the tweet from the dictionary for %li", (long)indexPath.row);
+        }
     }
     
     return cell;
@@ -184,16 +208,44 @@
  }
  */
 
-/*
  #pragma mark - Navigation
  
  // In a story board-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
  {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
+     // Get the new view controller using [segue destinationViewController].
+     // Pass the selected object to the new view controller.
+     MDFTweetDetailViewController *detailViewController = [segue destinationViewController];
+     
+     if (detailViewController != nil) {
+     
+         NSDictionary *currentItem = [twitterFeed objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+         
+         if (currentItem) {
+             detailViewController.twitterData = currentItem;
+         }
+     }
+     else {
+         NSLog(@"Could no get detail view controller");
+     }
  }
- 
- */
+
+- (void)refreshTweets:(id)sender
+{
+    if (currentAccount){
+        
+        // show loading alert view
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Loading" message: @"Tweets Loading..." delegate: self cancelButtonTitle: nil otherButtonTitles: nil,nil, nil];
+        [alert show];
+        
+        // hide alert view after tweets load
+        [[NSNotificationCenter defaultCenter] addObserverForName:@"TweetsLoaded" object:self queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
+            [alert dismissWithClickedButtonIndex:0 animated:YES];
+        }];
+        
+        // get the tweets
+        [self getTweets];
+    }
+}
 
 @end
