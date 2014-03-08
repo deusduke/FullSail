@@ -61,7 +61,7 @@
                                     <outlet property="tweetDateLabel" destination="Bu9-5Q-6VS" id="Jef-3I-YWb"/>
                                     <outlet property="tweetIconImage" destination="Yp2-L6-PyK" id="f8g-5t-rE2"/>
                                     <outlet property="tweetTextLabel" destination="ct5-h8-1iv" id="fk8-eC-Hmg"/>
-                                    <segue destination="qbS-b8-ssE" kind="push" id="hPA-tj-Cwn"/>
+                                    <segue destination="qbS-b8-ssE" kind="push" identifier="detail" id="hPA-tj-Cwn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -71,6 +71,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Your Tweets" id="VbF-oM-KPm">
+                        <barButtonItem key="leftBarButtonItem" title="My Profile" id="8um-2e-Kl2">
+                            <connections>
+                                <segue destination="dkm-TH-1yY" kind="push" identifier="profile" id="FNT-cp-hsf"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Refresh" id="RW9-os-u7a">
                             <connections>
                                 <action selector="refreshTweets:" destination="ZDb-B3-v3z" id="zvM-NV-lDP"/>
@@ -81,6 +86,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qBL-kK-XlS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="372" y="-176"/>
+        </scene>
+        <!--Profile View Controller - My Profile-->
+        <scene sceneID="Fqo-Bh-5kM">
+            <objects>
+                <viewController id="dkm-TH-1yY" customClass="MDFProfileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jwD-PM-clc"/>
+                        <viewControllerLayoutGuide type="bottom" id="mWG-LF-Uhi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9yM-s4-354">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitter_bird" translatesAutoresizingMaskIntoConstraints="NO" id="DKh-Kn-nfZ" customClass="AsyncImageView">
+                                <rect key="frame" x="85" y="20" width="151" height="84"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1e-EA-ySZ">
+                                <rect key="frame" x="26" y="144" width="133" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="40 followers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcz-ZW-blz">
+                                <rect key="frame" x="26" y="173" width="133" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="40 friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuz-eS-rlc">
+                                <rect key="frame" x="26" y="202" width="133" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNA-To-KeM">
+                                <rect key="frame" x="22" y="239" width="274" height="245"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Profile" id="AOS-ST-nW2"/>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="zNA-To-KeM" id="bYm-Tx-LWD"/>
+                        <outlet property="followersLabel" destination="hcz-ZW-blz" id="xXe-Xb-Sud"/>
+                        <outlet property="friendsLabel" destination="tuz-eS-rlc" id="cYR-lf-60i"/>
+                        <outlet property="profileImageView" destination="DKh-Kn-nfZ" id="5fs-dc-PHd"/>
+                        <outlet property="userNameLabel" destination="H1e-EA-ySZ" id="PsJ-jg-aT9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="in0-5L-DFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="-540"/>
         </scene>
         <!--Tweet Detail View Controller - Tweet Details-->
         <scene sceneID="IiU-VL-YDv">
@@ -95,24 +161,24 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitter_bird" translatesAutoresizingMaskIntoConstraints="NO" id="HTB-ec-txs" customClass="AsyncImageView">
-                                <rect key="frame" x="85" y="55" width="151" height="84"/>
+                                <rect key="frame" x="85" y="75" width="151" height="84"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7p-F2-4cV">
-                                <rect key="frame" x="20" y="186" width="133" height="21"/>
+                                <rect key="frame" x="20" y="206" width="133" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="02/21/2014" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldt-uW-tVe">
-                                <rect key="frame" x="161" y="186" width="139" height="21"/>
+                                <rect key="frame" x="161" y="206" width="139" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FnQ-uc-qBD">
-                                <rect key="frame" x="20" y="215" width="280" height="269"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnQ-uc-qBD">
+                                <rect key="frame" x="20" y="258" width="280" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -132,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Eb-z5-UHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="895" y="-176"/>
+            <point key="canvasLocation" x="943" y="188"/>
         </scene>
     </scenes>
     <resources>

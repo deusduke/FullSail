@@ -11,6 +11,7 @@
 #import "MDFMainTableViewController.h"
 #import "MDFTwitterTableViewCellController.h"
 #import "MDFTweetDetailViewController.h"
+#import "MDFProfileViewController.h"
 
 @interface MDFMainTableViewController ()
 
@@ -43,6 +44,11 @@
     
     // store the twitter account initially
     [self getTwitterLogin];
+    
+    // add the plus button
+    UIBarButtonItem *plus = [[UIBarButtonItem alloc] initWithTitle:@"  +" style:UIBarButtonItemStylePlain target:self action:@selector(postTweet:)];
+    
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:plus, self.navigationItem.rightBarButtonItem, nil];
 }
 
 - (void)getTwitterLogin {
@@ -215,18 +221,33 @@
  {
      // Get the new view controller using [segue destinationViewController].
      // Pass the selected object to the new view controller.
-     MDFTweetDetailViewController *detailViewController = [segue destinationViewController];
      
-     if (detailViewController != nil) {
-     
-         NSDictionary *currentItem = [twitterFeed objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+     if ([segue.identifier isEqualToString:@"detail"]) {
+         MDFTweetDetailViewController *detailViewController = [segue destinationViewController];
          
-         if (currentItem) {
-             detailViewController.twitterData = currentItem;
+         if (detailViewController != nil) {
+         
+             NSDictionary *currentItem = [twitterFeed objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+             
+             if (currentItem) {
+                 detailViewController.twitterData = currentItem;
+             }
+         }
+         else {
+             NSLog(@"Could no get detail view controller");
          }
      }
-     else {
-         NSLog(@"Could no get detail view controller");
+     
+     else if ([segue.identifier isEqualToString:@"profile"]) {
+         MDFProfileViewController *profileViewController = [segue destinationViewController];
+         
+         if (profileViewController != nil) {
+             
+             profileViewController.currentAccount = currentAccount;
+         }
+         else {
+             NSLog(@"Could no get detail view controller");
+         }
      }
  }
 
@@ -241,10 +262,21 @@
         // hide alert view after tweets load
         [[NSNotificationCenter defaultCenter] addObserverForName:@"TweetsLoaded" object:self queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
             [alert dismissWithClickedButtonIndex:0 animated:YES];
+            [self.tableView reloadData];
         }];
         
         // get the tweets
         [self getTweets];
+    }
+}
+
+- (void)postTweet:(id)sender
+{
+    SLComposeViewController *composeViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+    
+    if (composeViewController != nil) {
+        [composeViewController setInitialText:@"Post from "];
+        [self presentViewController:composeViewController animated:YES completion:nil];
     }
 }
 

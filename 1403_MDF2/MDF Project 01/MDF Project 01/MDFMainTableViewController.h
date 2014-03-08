@@ -17,5 +17,6 @@
 -(void) getTweets;
 
 -(IBAction)refreshTweets:(id)sender;
+-(IBAction)postTweet:(id)sender;
 
 @end
