@@ -9,18 +9,23 @@
 #import <Accounts/Accounts.h>
 #import <Social/Social.h>
 #import "MDFMainViewController.h"
+#import "MDFFollowerInfo.h"
+#import "MDFFollowerCollectionViewCell.h"
 
 @interface MDFMainViewController ()
 
 @end
 
 @implementation MDFMainViewController
-@synthesize currentAccount, twitterFriendsData;
+@synthesize currentAccount, twitterFriendsArray;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // initialize the array
+    twitterFriendsArray = [[NSMutableArray alloc] init];
     
     // get the current account
     [self getTwitterLogin];
@@ -69,12 +74,45 @@
         if (urlResponse.statusCode >= 200 && urlResponse.statusCode < 300) {
             
             NSError *jsonError;
-            twitterFriendsData =
+            NSDictionary* twitterFriendsData =
                 [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:&jsonError];
             
             if (twitterFriendsData != nil) {
                 NSLog(@"Twitter Response: %@\n", twitterFriendsData);
-                [[self collectionView] reloadData];
+                
+                // if we recieved twitter data, cycle through and add items to array
+                NSArray *users = [twitterFriendsData objectForKey:@"users"];
+                
+                if (users != nil) {
+                    [[self collectionView] reloadData];
+                    
+                    for (NSDictionary* user in users) {
+                        // once we drill down into the users, store in our array
+                        MDFFollowerInfo *followerInfo = [[MDFFollowerInfo alloc] init];
+                        AsyncImageView *avatar = [[AsyncImageView alloc] init];
+                        
+                        NSString* urlString = [user objectForKey:@"profile_image_url"];
+                        NSString* userName = [user objectForKey:@"screen_name"];
+                        
+                        NSURL* url = [NSURL URLWithString:urlString];
+                        [avatar setImageURL:url];
+                        
+                        [followerInfo setAvatar:avatar];
+                        [followerInfo setUserName:userName];
+                        
+                        [twitterFriendsArray addObject:followerInfo];
+                        
+                        // extra measure to ensure we only load 20 objects
+                        if (twitterFriendsArray.count == 20) {
+                            break;
+                        }
+                    }
+                    
+                    NSLog(@"%lu items loaded", (unsigned long)[twitterFriendsArray count]);
+                }
+                else {
+                    NSLog(@"Could not get users from data");
+                }
             }
             else {
                 // JSON deserialization failed
@@ -122,10 +160,18 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-    
-    if (cell != nil) {
-        // load the cell
+    MDFFollowerCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    if (cell != nil && twitterFriendsArray != nil) {
+        // pull the info from the array and display
+        MDFFollowerInfo *info = [twitterFriendsArray objectAtIndex:indexPath.row];
+        
+        if (info) {
+            cell.avatarImageView.image = info.avatar.image;
+            cell.usernameLabel.text = info.userName;
+        }
+        else {
+            NSLog(@"Could not get info from array");
+        }
     }
     
     return cell;
@@ -138,7 +184,10 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 0;
+    if (twitterFriendsArray != nil)
+        return twitterFriendsArray.count;
+    else
+        return 0;
 }
 
 @end

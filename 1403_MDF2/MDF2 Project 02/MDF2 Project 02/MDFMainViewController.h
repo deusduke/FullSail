@@ -12,7 +12,7 @@
 @interface MDFMainViewController : UICollectionViewController
 
 @property (strong, nonatomic) ACAccount* currentAccount;
-@property (strong, nonatomic) NSDictionary* twitterFriendsData;
+@property (strong, nonatomic) NSMutableArray* twitterFriendsArray;
 
 - (void)getTwitterFriends;
 - (void)getTwitterLogin;

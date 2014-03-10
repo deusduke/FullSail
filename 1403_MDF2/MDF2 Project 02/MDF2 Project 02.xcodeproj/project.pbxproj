@@ -25,6 +25,8 @@
 		607DCB7F18CD863000F7383D /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 607DCB7E18CD863000F7383D /* AsyncImageView.m */; };
 		607DCB8118CD892900F7383D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607DCB8018CD892900F7383D /* Social.framework */; };
 		607DCB8318CD893200F7383D /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607DCB8218CD893200F7383D /* Accounts.framework */; };
+		607DCB8618CD90F900F7383D /* MDFFollowerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 607DCB8518CD90F900F7383D /* MDFFollowerInfo.m */; };
+		607DCB8918CD9A1400F7383D /* MDFFollowerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 607DCB8818CD9A1400F7383D /* MDFFollowerCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,10 @@
 		607DCB7E18CD863000F7383D /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
 		607DCB8018CD892900F7383D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		607DCB8218CD893200F7383D /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		607DCB8418CD90F900F7383D /* MDFFollowerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFFollowerInfo.h; sourceTree = "<group>"; };
+		607DCB8518CD90F900F7383D /* MDFFollowerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFFollowerInfo.m; sourceTree = "<group>"; };
+		607DCB8718CD9A1400F7383D /* MDFFollowerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFFollowerCollectionViewCell.h; sourceTree = "<group>"; };
+		607DCB8818CD9A1400F7383D /* MDFFollowerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFFollowerCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,15 +131,19 @@
 		607DCB4B18CD83FD00F7383D /* MDF2 Project 02 */ = {
 			isa = PBXGroup;
 			children = (
+				607DCB6018CD83FD00F7383D /* Images.xcassets */,
+				607DCB5A18CD83FD00F7383D /* Main_iPad.storyboard */,
+				607DCB5718CD83FD00F7383D /* Main_iPhone.storyboard */,
 				607DCB7D18CD863000F7383D /* AsyncImageView.h */,
 				607DCB7E18CD863000F7383D /* AsyncImageView.m */,
 				607DCB5418CD83FD00F7383D /* MDFAppDelegate.h */,
 				607DCB5518CD83FD00F7383D /* MDFAppDelegate.m */,
-				607DCB5718CD83FD00F7383D /* Main_iPhone.storyboard */,
-				607DCB5A18CD83FD00F7383D /* Main_iPad.storyboard */,
+				607DCB8718CD9A1400F7383D /* MDFFollowerCollectionViewCell.h */,
+				607DCB8818CD9A1400F7383D /* MDFFollowerCollectionViewCell.m */,
+				607DCB8418CD90F900F7383D /* MDFFollowerInfo.h */,
+				607DCB8518CD90F900F7383D /* MDFFollowerInfo.m */,
 				607DCB5D18CD83FD00F7383D /* MDFMainViewController.h */,
 				607DCB5E18CD83FD00F7383D /* MDFMainViewController.m */,
-				607DCB6018CD83FD00F7383D /* Images.xcassets */,
 				607DCB4C18CD83FD00F7383D /* Supporting Files */,
 			);
 			path = "MDF2 Project 02";
@@ -269,7 +279,9 @@
 			files = (
 				607DCB5618CD83FD00F7383D /* MDFAppDelegate.m in Sources */,
 				607DCB5218CD83FD00F7383D /* main.m in Sources */,
+				607DCB8918CD9A1400F7383D /* MDFFollowerCollectionViewCell.m in Sources */,
 				607DCB5F18CD83FD00F7383D /* MDFMainViewController.m in Sources */,
+				607DCB8618CD90F900F7383D /* MDFFollowerInfo.m in Sources */,
 				607DCB7F18CD863000F7383D /* AsyncImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
