@@ -16,5 +16,6 @@
 
 - (void)getTwitterFriends;
 - (void)getTwitterLogin;
+- (void)reloadTableView:(NSNotification*)note;
 
 @end

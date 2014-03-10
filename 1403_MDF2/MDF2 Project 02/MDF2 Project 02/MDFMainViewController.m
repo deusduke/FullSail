@@ -40,6 +40,8 @@
             NSLog(@"Could not retrieve user account");
         }
     }];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTableView:) name:@"FriendsLoaded" object:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -108,9 +110,6 @@
                     }
                     
                     NSLog(@"%lu items loaded", (unsigned long)[twitterFriendsArray count]);
-                    
-                    // finally reload the data
-                    [[self collectionView] reloadData];
                 }
                 else {
                     NSLog(@"Could not get users from data");
@@ -158,6 +157,14 @@
     }
 }
 
+- (void)reloadTableView:(NSNotification *)note
+{
+    // reload of table data has to happen on the main thread to be instant
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.collectionView reloadData];
+    });
+}
+
 #pragma mark - UICollectionView Stuff
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -167,12 +174,13 @@
         // pull the info from the array and display
         MDFFollowerInfo *info = [twitterFriendsArray objectAtIndex:indexPath.row];
         
-        if (info) {
+        if (info && !(info.avatar.imageURL == cell.avatarImageView.imageURL)) {
             cell.avatarImageView.image = info.avatar.image;
+            cell.avatarImageView.imageURL= info.avatar.imageURL;
             cell.usernameLabel.text = info.userName;
         }
         else {
-            NSLog(@"Could not get info from array");
+            NSLog(@"Could not get info from array at %li", indexPath.row);
         }
     }
     
