@@ -84,8 +84,6 @@
                 NSArray *users = [twitterFriendsData objectForKey:@"users"];
                 
                 if (users != nil) {
-                    [[self collectionView] reloadData];
-                    
                     for (NSDictionary* user in users) {
                         // once we drill down into the users, store in our array
                         MDFFollowerInfo *followerInfo = [[MDFFollowerInfo alloc] init];
@@ -95,6 +93,7 @@
                         NSString* userName = [user objectForKey:@"screen_name"];
                         
                         NSURL* url = [NSURL URLWithString:urlString];
+                        [avatar setImage: [UIImage imageNamed:@"twitter_bird.png"]];
                         [avatar setImageURL:url];
                         
                         [followerInfo setAvatar:avatar];
@@ -109,6 +108,9 @@
                     }
                     
                     NSLog(@"%lu items loaded", (unsigned long)[twitterFriendsArray count]);
+                    
+                    // finally reload the data
+                    [[self collectionView] reloadData];
                 }
                 else {
                     NSLog(@"Could not get users from data");
@@ -188,6 +190,11 @@
         return twitterFriendsArray.count;
     else
         return 0;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 25;
 }
 
 @end

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Accounts/Accounts.h>
 
-@interface MDFMainViewController : UICollectionViewController
+@interface MDFMainViewController : UICollectionViewController<UICollectionViewDelegateFlowLayout>
 
 @property (strong, nonatomic) ACAccount* currentAccount;
 @property (strong, nonatomic) NSMutableArray* twitterFriendsArray;
