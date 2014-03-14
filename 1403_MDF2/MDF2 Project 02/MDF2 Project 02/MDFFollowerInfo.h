@@ -12,6 +12,6 @@
 @interface MDFFollowerInfo : NSObject
 
 @property (strong, nonatomic) NSString* userName;
-@property (strong, nonatomic) AsyncImageView* avatar;
+@property (strong, nonatomic) NSURL* imageURL;
 
 @end

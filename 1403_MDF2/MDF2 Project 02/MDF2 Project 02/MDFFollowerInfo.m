@@ -10,6 +10,6 @@
 
 @implementation MDFFollowerInfo
 
-@synthesize userName, avatar;
+@synthesize userName, imageURL;
 
 @end

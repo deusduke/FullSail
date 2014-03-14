@@ -10,5 +10,13 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "-[MDFFriendViewController viewDidLoad]:MDFFriendViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "usernameLabel.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

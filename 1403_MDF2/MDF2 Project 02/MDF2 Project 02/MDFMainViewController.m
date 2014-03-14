@@ -11,18 +11,22 @@
 #import "MDFMainViewController.h"
 #import "MDFFollowerInfo.h"
 #import "MDFFollowerCollectionViewCell.h"
+#import "MDFFriendViewController.h"
 
 @interface MDFMainViewController ()
 
 @end
 
 @implementation MDFMainViewController
-@synthesize currentAccount, twitterFriendsArray;
+@synthesize currentAccount, twitterFriendsArray, selectedIndexPath, placholderImage;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // set the placeholder image
+    placholderImage = [UIImage imageNamed:@"twitter_bird.png"];
     
     // initialize the array
     twitterFriendsArray = [[NSMutableArray alloc] init];
@@ -89,16 +93,13 @@
                     for (NSDictionary* user in users) {
                         // once we drill down into the users, store in our array
                         MDFFollowerInfo *followerInfo = [[MDFFollowerInfo alloc] init];
-                        AsyncImageView *avatar = [[AsyncImageView alloc] init];
                         
                         NSString* urlString = [user objectForKey:@"profile_image_url"];
                         NSString* userName = [user objectForKey:@"screen_name"];
                         
                         NSURL* url = [NSURL URLWithString:urlString];
-                        [avatar setImage: [UIImage imageNamed:@"twitter_bird.png"]];
-                        [avatar setImageURL:url];
                         
-                        [followerInfo setAvatar:avatar];
+                        [followerInfo setImageURL:url];
                         [followerInfo setUserName:userName];
                         
                         [twitterFriendsArray addObject:followerInfo];
@@ -126,6 +127,8 @@
             // Log the server response on error
             NSLog(@"There was an error, the response code was %ld",
                   (long)urlResponse.statusCode);
+            
+            [self showError:@"There was a problem connecting to the internet"];
         }
     }];
 }
@@ -148,6 +151,8 @@
                 
                 else {
                     NSLog(@"User denied access");
+                    
+                    [self showError:@"We need access to your twitter account in order to show your friends"];
                 }
                 
                 // at the end, post the finished notification
@@ -165,6 +170,14 @@
     });
 }
 
+- (void)showError:(NSString *)message
+{
+    // setup alert and show
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"There was an error" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
+    [alert show];
+}
+
 #pragma mark - UICollectionView Stuff
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -174,9 +187,9 @@
         // pull the info from the array and display
         MDFFollowerInfo *info = [twitterFriendsArray objectAtIndex:indexPath.row];
         
-        if (info && !(info.avatar.imageURL == cell.avatarImageView.imageURL)) {
-            cell.avatarImageView.image = info.avatar.image;
-            cell.avatarImageView.imageURL= info.avatar.imageURL;
+        if (info) {
+            cell.avatarImageView.image = placholderImage;
+            cell.avatarImageView.imageURL= info.imageURL;
             cell.usernameLabel.text = info.userName;
         }
         else {
@@ -203,6 +216,48 @@
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
     return 25;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.selectedIndexPath = indexPath;
+    
+    NSLog(@"Selected friend %li", (long)indexPath.row);
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    MDFFriendViewController* friendViewController = [segue destinationViewController];
+    
+    MDFFollowerCollectionViewCell* cell = nil;
+    
+    // find and set the selected cell
+    for (MDFFollowerCollectionViewCell* cvCell in [self.collectionView visibleCells])
+    {
+        NSLog(@"%@", cvCell.usernameLabel.text);
+        
+        if (cvCell.selected) {
+            cell = cvCell;
+            NSLog(@"Found the target cell");
+            NSLog(@"Cell index is %li", [self.collectionView indexPathForCell:cell].row);
+            break;
+        }
+    }
+    
+    if (friendViewController && cell) {
+        // get friend info and prepare the view
+        MDFFollowerInfo* currentInfo = [twitterFriendsArray objectAtIndex:[self.collectionView indexPathForCell:cell].row];
+        
+        if (currentInfo)
+            NSLog(@"%@", currentInfo);
+        else
+            NSLog(@"Couldn't get the info fromt he array");
+        
+        if (currentInfo) {
+            NSLog(@"Moving to screen for %@", currentInfo.userName);
+            friendViewController.followerInfo = currentInfo;
+        }
+    }
 }
 
 @end

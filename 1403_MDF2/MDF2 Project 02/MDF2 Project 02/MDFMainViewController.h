@@ -13,9 +13,12 @@
 
 @property (strong, nonatomic) ACAccount* currentAccount;
 @property (strong, nonatomic) NSMutableArray* twitterFriendsArray;
+@property (strong, nonatomic) NSIndexPath* selectedIndexPath;
+@property (strong, nonatomic) UIImage* placholderImage;
 
 - (void)getTwitterFriends;
 - (void)getTwitterLogin;
 - (void)reloadTableView:(NSNotification*)note;
+- (void)showError:(NSString*)message;
 
 @end

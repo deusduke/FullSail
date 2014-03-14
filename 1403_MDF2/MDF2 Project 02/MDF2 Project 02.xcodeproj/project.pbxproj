@@ -27,6 +27,7 @@
 		607DCB8318CD893200F7383D /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607DCB8218CD893200F7383D /* Accounts.framework */; };
 		607DCB8618CD90F900F7383D /* MDFFollowerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 607DCB8518CD90F900F7383D /* MDFFollowerInfo.m */; };
 		607DCB8918CD9A1400F7383D /* MDFFollowerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 607DCB8818CD9A1400F7383D /* MDFFollowerCollectionViewCell.m */; };
+		607DCB8C18CEAFD300F7383D /* MDFFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607DCB8B18CEAFD300F7383D /* MDFFriendViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		607DCB8518CD90F900F7383D /* MDFFollowerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFFollowerInfo.m; sourceTree = "<group>"; };
 		607DCB8718CD9A1400F7383D /* MDFFollowerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFFollowerCollectionViewCell.h; sourceTree = "<group>"; };
 		607DCB8818CD9A1400F7383D /* MDFFollowerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFFollowerCollectionViewCell.m; sourceTree = "<group>"; };
+		607DCB8A18CEAFD300F7383D /* MDFFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFFriendViewController.h; sourceTree = "<group>"; };
+		607DCB8B18CEAFD300F7383D /* MDFFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFFriendViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 				607DCB8518CD90F900F7383D /* MDFFollowerInfo.m */,
 				607DCB5D18CD83FD00F7383D /* MDFMainViewController.h */,
 				607DCB5E18CD83FD00F7383D /* MDFMainViewController.m */,
+				607DCB8A18CEAFD300F7383D /* MDFFriendViewController.h */,
+				607DCB8B18CEAFD300F7383D /* MDFFriendViewController.m */,
 				607DCB4C18CD83FD00F7383D /* Supporting Files */,
 			);
 			path = "MDF2 Project 02";
@@ -282,6 +287,7 @@
 				607DCB8918CD9A1400F7383D /* MDFFollowerCollectionViewCell.m in Sources */,
 				607DCB5F18CD83FD00F7383D /* MDFMainViewController.m in Sources */,
 				607DCB8618CD90F900F7383D /* MDFFollowerInfo.m in Sources */,
+				607DCB8C18CEAFD300F7383D /* MDFFriendViewController.m in Sources */,
 				607DCB7F18CD863000F7383D /* AsyncImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,6 +507,7 @@
 				607DCB7918CD83FD00F7383D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		607DCB7A18CD83FD00F7383D /* Build configuration list for PBXNativeTarget "MDF2 Project 02Tests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +516,7 @@
 				607DCB7C18CD83FD00F7383D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
