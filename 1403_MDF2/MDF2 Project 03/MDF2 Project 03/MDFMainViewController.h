@@ -10,4 +10,17 @@
 
 @interface MDFMainViewController : UIViewController
 
+{
+    enum PictureTarget {Camera, Movie, PhotoStream};
+}
+
+@property (nonatomic) enum PictureTarget currentTarget;
+
+- (IBAction)getPictureFromCamera:(id)sender;
+- (IBAction)getMovieFromCamera:(id)sender;
+- (IBAction)getPictureImageGallery:(id)sender;
+
+- (void)showError:(NSString*)message;
+- (void)showImagePickerForSource:(UIImagePickerControllerSourceType)sourceType;
+
 @end
