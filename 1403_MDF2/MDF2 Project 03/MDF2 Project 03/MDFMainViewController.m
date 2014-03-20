@@ -24,23 +24,28 @@
 
 - (void)getPictureFromCamera:(id)sender
 {
-    // make sure we can use the camera, otherwise show the error message
+    currentTarget = Camera;
     [self showImagePickerForSource:UIImagePickerControllerSourceTypeCamera];
 }
 
 - (void)getMovieFromCamera:(id)sender
 {
+    currentTarget = Movie;
     [self showImagePickerForSource:UIImagePickerControllerSourceTypeCamera];
 }
 
 - (void)getPictureImageGallery:(id)sender
 {
-    
+    currentTarget = PhotoStream;
+    [self showImagePickerForSource:UIImagePickerControllerSourceTypePhotoLibrary];
 }
 
 - (void)showError:(NSString *)message
 {
+    // setup alert and show
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"There was an error" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     
+    [alert show];
 }
 
 - (void)showImagePickerForSource:(UIImagePickerControllerSourceType )sourceType
@@ -65,12 +70,37 @@
         default:
             break;
     }
+    
+    // now we can proceed
+    UIImagePickerController* picker = [[UIImagePickerController alloc] init];
+    if (picker) {
+        picker.sourceType = sourceType;
+        picker.delegate = self;
+        picker.allowsEditing = YES;
+        
+        [self presentViewController:picker animated:YES completion:nil];
+    }
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    // log output and dismiss view
+    NSLog(@"%@", info.description);
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    NSLog(@"User cancelled image picking");
+    
+    // be sure to dismiss the view
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
