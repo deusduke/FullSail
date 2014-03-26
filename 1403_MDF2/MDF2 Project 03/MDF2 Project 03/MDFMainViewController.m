@@ -6,9 +6,19 @@
 //  Copyright (c) 2014 DEUS Enterprises. All rights reserved.
 //
 
+#import <MobileCoreServices/MobileCoreServices.h>
 #import "MDFMainViewController.h"
+#import "MDFScaledImageViewController.h"
+#import "MDFMovieViewController.h"
 
 @interface MDFMainViewController ()
+{
+    // private vars for passing data between functions
+    UIImage* originalImage;
+    UIImage* modifiedImage;
+    
+    NSURL* movieURL;
+}
 
 @end
 
@@ -78,6 +88,9 @@
         picker.delegate = self;
         picker.allowsEditing = YES;
         
+        if (currentTarget == Movie)
+            picker.mediaTypes = [NSArray arrayWithObjects:(NSString*)kUTTypeMovie, nil];
+        
         [self presentViewController:picker animated:YES completion:nil];
     }
 }
@@ -90,9 +103,24 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
+    if (currentTarget == Camera) {
+        originalImage = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+        modifiedImage = [info objectForKey:@"UIImagePickerControllerEditedImage"];
+    }
+    else if (currentTarget == Movie) {
+        movieURL = [info objectForKeyedSubscript:@"UIImagePickerControllerMediaURL"];
+    }
+    
     // log output and dismiss view
     NSLog(@"%@", info.description);
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:^() {
+        if (currentTarget == Camera) {
+            [self performSegueWithIdentifier:@"image" sender:self];
+        }
+        else if (currentTarget == Movie) {
+            [self performSegueWithIdentifier:@"movie" sender:self];
+        }
+    }];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
@@ -101,6 +129,26 @@
     
     // be sure to dismiss the view
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if (currentTarget == Camera) {
+        MDFScaledImageViewController *siController = segue.destinationViewController;
+    
+        if (siController != nil) {
+            siController.originalImage = originalImage;
+            siController.modifiedImage = modifiedImage;
+        }
+    }
+    
+    else if (currentTarget == Movie) {
+        MDFMovieViewController *mController = segue.destinationViewController;
+        
+        if (mController != nil) {
+//            mController.movieURL = movieURL;
+        }
+    }
 }
 
 @end

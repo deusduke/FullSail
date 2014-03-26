@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MDFMainViewController : UIViewController <UIImagePickerControllerDelegate>
+@interface MDFMainViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 {
     enum PictureTarget {Camera, Movie, PhotoStream};
