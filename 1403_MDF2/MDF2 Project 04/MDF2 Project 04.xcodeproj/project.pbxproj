@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6003000218E39051005D3EBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003000018E39051005D3EBC /* InfoPlist.strings */; };
+		6003000418E39051005D3EBC /* MDF2_Project_04Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003000318E39051005D3EBC /* MDF2_Project_04Tests.m */; };
+		6003000F18E391B3005D3EBC /* MDFMovieDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003000E18E391B3005D3EBC /* MDFMovieDetailsViewController.m */; };
+		6003001218E391C3005D3EBC /* MDFMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003001118E391C3005D3EBC /* MDFMovieViewController.m */; };
+		6003001518E3938F005D3EBC /* MDFMovieInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003001418E3938F005D3EBC /* MDFMovieInfo.m */; };
+		6003001818E393CF005D3EBC /* MDFTheaterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003001718E393CF005D3EBC /* MDFTheaterInfo.m */; };
+		6003001B18E50C6B005D3EBC /* MDFMovieCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003001A18E50C6B005D3EBC /* MDFMovieCellTableViewCell.m */; };
+		6003002418E51A80005D3EBC /* 300_Rise_Of_An_Empire_Trailer_4_A_5.1-720p-HDTN.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6003001D18E51A80005D3EBC /* 300_Rise_Of_An_Empire_Trailer_4_A_5.1-720p-HDTN.mp4 */; };
+		6003002518E51A80005D3EBC /* 20140131_thelegomovie_featurettemanofplastic_3192.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6003001E18E51A80005D3EBC /* 20140131_thelegomovie_featurettemanofplastic_3192.mp4 */; };
+		6003002618E51A80005D3EBC /* 20140304_captainamerica2_defendtvspot_3192.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6003001F18E51A80005D3EBC /* 20140304_captainamerica2_defendtvspot_3192.mp4 */; };
+		6003002718E51A80005D3EBC /* 20140314_oculus_trailer2_3192.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6003002018E51A80005D3EBC /* 20140314_oculus_trailer2_3192.mp4 */; };
+		6003002818E51A80005D3EBC /* 518114876_4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6003002118E51A80005D3EBC /* 518114876_4.mp4 */; };
+		6003002918E51A80005D3EBC /* divergent-tvspot_h720p.mov in Resources */ = {isa = PBXBuildFile; fileRef = 6003002218E51A80005D3EBC /* divergent-tvspot_h720p.mov */; };
+		6003002A18E51A80005D3EBC /* needforspeed-biggame_h720p.mov in Resources */ = {isa = PBXBuildFile; fileRef = 6003002318E51A80005D3EBC /* needforspeed-biggame_h720p.mov */; };
+		6003002C18E51AB9005D3EBC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003002B18E51AB9005D3EBC /* MediaPlayer.framework */; };
+		6003FFD618E39051005D3EBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003FFD518E39051005D3EBC /* Foundation.framework */; };
+		6003FFD818E39051005D3EBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003FFD718E39051005D3EBC /* CoreGraphics.framework */; };
+		6003FFDA18E39051005D3EBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003FFD918E39051005D3EBC /* UIKit.framework */; };
+		6003FFE018E39051005D3EBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003FFDE18E39051005D3EBC /* InfoPlist.strings */; };
+		6003FFE218E39051005D3EBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003FFE118E39051005D3EBC /* main.m */; };
+		6003FFE618E39051005D3EBC /* MDFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003FFE518E39051005D3EBC /* MDFAppDelegate.m */; };
+		6003FFE918E39051005D3EBC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003FFE718E39051005D3EBC /* Main_iPhone.storyboard */; };
+		6003FFEC18E39051005D3EBC /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003FFEA18E39051005D3EBC /* Main_iPad.storyboard */; };
+		6003FFEF18E39051005D3EBC /* MDFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003FFEE18E39051005D3EBC /* MDFMainViewController.m */; };
+		6003FFF118E39051005D3EBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003FFF018E39051005D3EBC /* Images.xcassets */; };
+		6003FFF818E39051005D3EBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003FFF718E39051005D3EBC /* XCTest.framework */; };
+		6003FFF918E39051005D3EBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003FFD518E39051005D3EBC /* Foundation.framework */; };
+		6003FFFA18E39051005D3EBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003FFD918E39051005D3EBC /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6003FFFB18E39051005D3EBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003FFCA18E39051005D3EBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003FFD118E39051005D3EBC;
+			remoteInfo = "MDF2 Project 04";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6003000118E39051005D3EBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003000318E39051005D3EBC /* MDF2_Project_04Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDF2_Project_04Tests.m; sourceTree = "<group>"; };
+		6003000D18E391B3005D3EBC /* MDFMovieDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFMovieDetailsViewController.h; sourceTree = "<group>"; };
+		6003000E18E391B3005D3EBC /* MDFMovieDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFMovieDetailsViewController.m; sourceTree = "<group>"; };
+		6003001018E391C3005D3EBC /* MDFMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFMovieViewController.h; sourceTree = "<group>"; };
+		6003001118E391C3005D3EBC /* MDFMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFMovieViewController.m; sourceTree = "<group>"; };
+		6003001318E3938F005D3EBC /* MDFMovieInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFMovieInfo.h; sourceTree = "<group>"; };
+		6003001418E3938F005D3EBC /* MDFMovieInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFMovieInfo.m; sourceTree = "<group>"; };
+		6003001618E393CF005D3EBC /* MDFTheaterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFTheaterInfo.h; sourceTree = "<group>"; };
+		6003001718E393CF005D3EBC /* MDFTheaterInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFTheaterInfo.m; sourceTree = "<group>"; };
+		6003001918E50C6B005D3EBC /* MDFMovieCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFMovieCellTableViewCell.h; sourceTree = "<group>"; };
+		6003001A18E50C6B005D3EBC /* MDFMovieCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFMovieCellTableViewCell.m; sourceTree = "<group>"; };
+		6003001D18E51A80005D3EBC /* 300_Rise_Of_An_Empire_Trailer_4_A_5.1-720p-HDTN.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "300_Rise_Of_An_Empire_Trailer_4_A_5.1-720p-HDTN.mp4"; path = "../../../../../../Desktop/MDF2/Week 04/trailers/300_Rise_Of_An_Empire_Trailer_4_A_5.1-720p-HDTN.mp4"; sourceTree = "<group>"; };
+		6003001E18E51A80005D3EBC /* 20140131_thelegomovie_featurettemanofplastic_3192.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 20140131_thelegomovie_featurettemanofplastic_3192.mp4; path = "../../../../../../Desktop/MDF2/Week 04/trailers/20140131_thelegomovie_featurettemanofplastic_3192.mp4"; sourceTree = "<group>"; };
+		6003001F18E51A80005D3EBC /* 20140304_captainamerica2_defendtvspot_3192.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 20140304_captainamerica2_defendtvspot_3192.mp4; path = "../../../../../../Desktop/MDF2/Week 04/trailers/20140304_captainamerica2_defendtvspot_3192.mp4"; sourceTree = "<group>"; };
+		6003002018E51A80005D3EBC /* 20140314_oculus_trailer2_3192.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 20140314_oculus_trailer2_3192.mp4; path = "../../../../../../Desktop/MDF2/Week 04/trailers/20140314_oculus_trailer2_3192.mp4"; sourceTree = "<group>"; };
+		6003002118E51A80005D3EBC /* 518114876_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 518114876_4.mp4; path = "../../../../../../Desktop/MDF2/Week 04/trailers/518114876_4.mp4"; sourceTree = "<group>"; };
+		6003002218E51A80005D3EBC /* divergent-tvspot_h720p.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "divergent-tvspot_h720p.mov"; path = "../../../../../../Desktop/MDF2/Week 04/trailers/divergent-tvspot_h720p.mov"; sourceTree = "<group>"; };
+		6003002318E51A80005D3EBC /* needforspeed-biggame_h720p.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "needforspeed-biggame_h720p.mov"; path = "../../../../../../Desktop/MDF2/Week 04/trailers/needforspeed-biggame_h720p.mov"; sourceTree = "<group>"; };
+		6003002B18E51AB9005D3EBC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		6003FFD218E39051005D3EBC /* MDF2 Project 04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MDF2 Project 04.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003FFD518E39051005D3EBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003FFD718E39051005D3EBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003FFD918E39051005D3EBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003FFDD18E39051005D3EBC /* MDF2 Project 04-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MDF2 Project 04-Info.plist"; sourceTree = "<group>"; };
+		6003FFDF18E39051005D3EBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003FFE118E39051005D3EBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6003FFE318E39051005D3EBC /* MDF2 Project 04-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDF2 Project 04-Prefix.pch"; sourceTree = "<group>"; };
+		6003FFE418E39051005D3EBC /* MDFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFAppDelegate.h; sourceTree = "<group>"; };
+		6003FFE518E39051005D3EBC /* MDFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFAppDelegate.m; sourceTree = "<group>"; };
+		6003FFE818E39051005D3EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		6003FFEB18E39051005D3EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		6003FFED18E39051005D3EBC /* MDFMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFMainViewController.h; sourceTree = "<group>"; };
+		6003FFEE18E39051005D3EBC /* MDFMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFMainViewController.m; sourceTree = "<group>"; };
+		6003FFF018E39051005D3EBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6003FFF618E39051005D3EBC /* MDF2 Project 04Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MDF2 Project 04Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003FFF718E39051005D3EBC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6003FFFF18E39051005D3EBC /* MDF2 Project 04Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MDF2 Project 04Tests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6003FFCF18E39051005D3EBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003002C18E51AB9005D3EBC /* MediaPlayer.framework in Frameworks */,
+				6003FFD818E39051005D3EBC /* CoreGraphics.framework in Frameworks */,
+				6003FFDA18E39051005D3EBC /* UIKit.framework in Frameworks */,
+				6003FFD618E39051005D3EBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003FFF318E39051005D3EBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003FFF818E39051005D3EBC /* XCTest.framework in Frameworks */,
+				6003FFFA18E39051005D3EBC /* UIKit.framework in Frameworks */,
+				6003FFF918E39051005D3EBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6003001C18E51A4E005D3EBC /* movies */ = {
+			isa = PBXGroup;
+			children = (
+				6003001D18E51A80005D3EBC /* 300_Rise_Of_An_Empire_Trailer_4_A_5.1-720p-HDTN.mp4 */,
+				6003001E18E51A80005D3EBC /* 20140131_thelegomovie_featurettemanofplastic_3192.mp4 */,
+				6003001F18E51A80005D3EBC /* 20140304_captainamerica2_defendtvspot_3192.mp4 */,
+				6003002018E51A80005D3EBC /* 20140314_oculus_trailer2_3192.mp4 */,
+				6003002118E51A80005D3EBC /* 518114876_4.mp4 */,
+				6003002218E51A80005D3EBC /* divergent-tvspot_h720p.mov */,
+				6003002318E51A80005D3EBC /* needforspeed-biggame_h720p.mov */,
+			);
+			name = movies;
+			sourceTree = "<group>";
+		};
+		6003FFC918E39050005D3EBC = {
+			isa = PBXGroup;
+			children = (
+				6003FFDB18E39051005D3EBC /* MDF2 Project 04 */,
+				6003FFFD18E39051005D3EBC /* MDF2 Project 04Tests */,
+				6003FFD418E39051005D3EBC /* Frameworks */,
+				6003FFD318E39051005D3EBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6003FFD318E39051005D3EBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003FFD218E39051005D3EBC /* MDF2 Project 04.app */,
+				6003FFF618E39051005D3EBC /* MDF2 Project 04Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003FFD418E39051005D3EBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6003002B18E51AB9005D3EBC /* MediaPlayer.framework */,
+				6003FFD518E39051005D3EBC /* Foundation.framework */,
+				6003FFD718E39051005D3EBC /* CoreGraphics.framework */,
+				6003FFD918E39051005D3EBC /* UIKit.framework */,
+				6003FFF718E39051005D3EBC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003FFDB18E39051005D3EBC /* MDF2 Project 04 */ = {
+			isa = PBXGroup;
+			children = (
+				6003001C18E51A4E005D3EBC /* movies */,
+				6003FFE418E39051005D3EBC /* MDFAppDelegate.h */,
+				6003FFE518E39051005D3EBC /* MDFAppDelegate.m */,
+				6003FFE718E39051005D3EBC /* Main_iPhone.storyboard */,
+				6003FFEA18E39051005D3EBC /* Main_iPad.storyboard */,
+				6003FFED18E39051005D3EBC /* MDFMainViewController.h */,
+				6003FFEE18E39051005D3EBC /* MDFMainViewController.m */,
+				6003FFF018E39051005D3EBC /* Images.xcassets */,
+				6003FFDC18E39051005D3EBC /* Supporting Files */,
+				6003000D18E391B3005D3EBC /* MDFMovieDetailsViewController.h */,
+				6003000E18E391B3005D3EBC /* MDFMovieDetailsViewController.m */,
+				6003001018E391C3005D3EBC /* MDFMovieViewController.h */,
+				6003001118E391C3005D3EBC /* MDFMovieViewController.m */,
+				6003001318E3938F005D3EBC /* MDFMovieInfo.h */,
+				6003001418E3938F005D3EBC /* MDFMovieInfo.m */,
+				6003001618E393CF005D3EBC /* MDFTheaterInfo.h */,
+				6003001718E393CF005D3EBC /* MDFTheaterInfo.m */,
+				6003001918E50C6B005D3EBC /* MDFMovieCellTableViewCell.h */,
+				6003001A18E50C6B005D3EBC /* MDFMovieCellTableViewCell.m */,
+			);
+			path = "MDF2 Project 04";
+			sourceTree = "<group>";
+		};
+		6003FFDC18E39051005D3EBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003FFDD18E39051005D3EBC /* MDF2 Project 04-Info.plist */,
+				6003FFDE18E39051005D3EBC /* InfoPlist.strings */,
+				6003FFE118E39051005D3EBC /* main.m */,
+				6003FFE318E39051005D3EBC /* MDF2 Project 04-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6003FFFD18E39051005D3EBC /* MDF2 Project 04Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6003000318E39051005D3EBC /* MDF2_Project_04Tests.m */,
+				6003FFFE18E39051005D3EBC /* Supporting Files */,
+			);
+			path = "MDF2 Project 04Tests";
+			sourceTree = "<group>";
+		};
+		6003FFFE18E39051005D3EBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003FFFF18E39051005D3EBC /* MDF2 Project 04Tests-Info.plist */,
+				6003000018E39051005D3EBC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6003FFD118E39051005D3EBC /* MDF2 Project 04 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003000718E39051005D3EBC /* Build configuration list for PBXNativeTarget "MDF2 Project 04" */;
+			buildPhases = (
+				6003FFCE18E39051005D3EBC /* Sources */,
+				6003FFCF18E39051005D3EBC /* Frameworks */,
+				6003FFD018E39051005D3EBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MDF2 Project 04";
+			productName = "MDF2 Project 04";
+			productReference = 6003FFD218E39051005D3EBC /* MDF2 Project 04.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6003FFF518E39051005D3EBC /* MDF2 Project 04Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003000A18E39051005D3EBC /* Build configuration list for PBXNativeTarget "MDF2 Project 04Tests" */;
+			buildPhases = (
+				6003FFF218E39051005D3EBC /* Sources */,
+				6003FFF318E39051005D3EBC /* Frameworks */,
+				6003FFF418E39051005D3EBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6003FFFC18E39051005D3EBC /* PBXTargetDependency */,
+			);
+			name = "MDF2 Project 04Tests";
+			productName = "MDF2 Project 04Tests";
+			productReference = 6003FFF618E39051005D3EBC /* MDF2 Project 04Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003FFCA18E39051005D3EBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MDF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "DEUS Enterprises";
+				TargetAttributes = {
+					6003FFF518E39051005D3EBC = {
+						TestTargetID = 6003FFD118E39051005D3EBC;
+					};
+				};
+			};
+			buildConfigurationList = 6003FFCD18E39051005D3EBC /* Build configuration list for PBXProject "MDF2 Project 04" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6003FFC918E39050005D3EBC;
+			productRefGroup = 6003FFD318E39051005D3EBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003FFD118E39051005D3EBC /* MDF2 Project 04 */,
+				6003FFF518E39051005D3EBC /* MDF2 Project 04Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6003FFD018E39051005D3EBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003002618E51A80005D3EBC /* 20140304_captainamerica2_defendtvspot_3192.mp4 in Resources */,
+				6003002718E51A80005D3EBC /* 20140314_oculus_trailer2_3192.mp4 in Resources */,
+				6003FFEC18E39051005D3EBC /* Main_iPad.storyboard in Resources */,
+				6003002818E51A80005D3EBC /* 518114876_4.mp4 in Resources */,
+				6003002418E51A80005D3EBC /* 300_Rise_Of_An_Empire_Trailer_4_A_5.1-720p-HDTN.mp4 in Resources */,
+				6003FFF118E39051005D3EBC /* Images.xcassets in Resources */,
+				6003002A18E51A80005D3EBC /* needforspeed-biggame_h720p.mov in Resources */,
+				6003FFE918E39051005D3EBC /* Main_iPhone.storyboard in Resources */,
+				6003002518E51A80005D3EBC /* 20140131_thelegomovie_featurettemanofplastic_3192.mp4 in Resources */,
+				6003FFE018E39051005D3EBC /* InfoPlist.strings in Resources */,
+				6003002918E51A80005D3EBC /* divergent-tvspot_h720p.mov in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003FFF418E39051005D3EBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003000218E39051005D3EBC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6003FFCE18E39051005D3EBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003001B18E50C6B005D3EBC /* MDFMovieCellTableViewCell.m in Sources */,
+				6003001818E393CF005D3EBC /* MDFTheaterInfo.m in Sources */,
+				6003001218E391C3005D3EBC /* MDFMovieViewController.m in Sources */,
+				6003FFE618E39051005D3EBC /* MDFAppDelegate.m in Sources */,
+				6003FFE218E39051005D3EBC /* main.m in Sources */,
+				6003000F18E391B3005D3EBC /* MDFMovieDetailsViewController.m in Sources */,
+				6003001518E3938F005D3EBC /* MDFMovieInfo.m in Sources */,
+				6003FFEF18E39051005D3EBC /* MDFMainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003FFF218E39051005D3EBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003000418E39051005D3EBC /* MDF2_Project_04Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6003FFFC18E39051005D3EBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003FFD118E39051005D3EBC /* MDF2 Project 04 */;
+			targetProxy = 6003FFFB18E39051005D3EBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6003000018E39051005D3EBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003000118E39051005D3EBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6003FFDE18E39051005D3EBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003FFDF18E39051005D3EBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6003FFE718E39051005D3EBC /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003FFE818E39051005D3EBC /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		6003FFEA18E39051005D3EBC /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003FFEB18E39051005D3EBC /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6003000518E39051005D3EBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003000618E39051005D3EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003000818E39051005D3EBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MDF2 Project 04/MDF2 Project 04-Prefix.pch";
+				INFOPLIST_FILE = "MDF2 Project 04/MDF2 Project 04-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003000918E39051005D3EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MDF2 Project 04/MDF2 Project 04-Prefix.pch";
+				INFOPLIST_FILE = "MDF2 Project 04/MDF2 Project 04-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6003000B18E39051005D3EBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MDF2 Project 04.app/MDF2 Project 04";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MDF2 Project 04/MDF2 Project 04-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MDF2 Project 04Tests/MDF2 Project 04Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6003000C18E39051005D3EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MDF2 Project 04.app/MDF2 Project 04";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MDF2 Project 04/MDF2 Project 04-Prefix.pch";
+				INFOPLIST_FILE = "MDF2 Project 04Tests/MDF2 Project 04Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6003000718E39051005D3EBC /* Build configuration list for PBXNativeTarget "MDF2 Project 04" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003000818E39051005D3EBC /* Debug */,
+				6003000918E39051005D3EBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6003000A18E39051005D3EBC /* Build configuration list for PBXNativeTarget "MDF2 Project 04Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003000B18E39051005D3EBC /* Debug */,
+				6003000C18E39051005D3EBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6003FFCD18E39051005D3EBC /* Build configuration list for PBXProject "MDF2 Project 04" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003000518E39051005D3EBC /* Debug */,
+				6003000618E39051005D3EBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003FFCA18E39051005D3EBC /* Project object */;
+}
