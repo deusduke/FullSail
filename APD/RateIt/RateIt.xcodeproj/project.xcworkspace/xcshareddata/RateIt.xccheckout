@@ -12,6 +12,8 @@
 	<dict>
 		<key>002D3834-92DA-40AF-806D-3B737B8CCA02</key>
 		<string>ssh://github.com/deusduke/FullSail.git</string>
+		<key>4E9DF7E7-500B-4D35-9B3B-77CC1CE17871</key>
+		<string>https://github.com/ecstasy2/toast-notifications-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>APD/RateIt/RateIt.xcodeproj/project.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>002D3834-92DA-40AF-806D-3B737B8CCA02</key>
 		<string>../../../..</string>
+		<key>4E9DF7E7-500B-4D35-9B3B-77CC1CE17871</key>
+		<string>../../../../../../../Projects/toast-notifications-ios</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/deusduke/FullSail.git</string>
@@ -35,6 +39,14 @@
 			<string>002D3834-92DA-40AF-806D-3B737B8CCA02</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Repo</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4E9DF7E7-500B-4D35-9B3B-77CC1CE17871</string>
+			<key>IDESourceControlWCCName</key>
+			<string>toast-notifications-ios</string>
 		</dict>
 	</array>
 </dict>

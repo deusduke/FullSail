@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+#import "RIProduct.h"
+
 @interface RIRestClient : NSObject
 
+@property (strong, nonatomic) RIProduct* products;
+@property (nonatomic) BOOL isLoggedIn;
+
++(BOOL)userIsLoggedIn;
++(void)loginUser;
++(void)logoutUser;
+
 @end
+
+static BOOL isLoggedIn = false;

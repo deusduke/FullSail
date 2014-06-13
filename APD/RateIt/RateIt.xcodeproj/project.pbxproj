@@ -24,6 +24,14 @@
 		601EDBE1194459640068C168 /* RateItTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 601EDBE0194459640068C168 /* RateItTests.m */; };
 		609B13A719494DE3009CDAAA /* RIRestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B13A619494DE3009CDAAA /* RIRestClient.m */; };
 		609B13AA19494E61009CDAAA /* RIProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B13A919494E61009CDAAA /* RIProduct.m */; };
+		609B13AD194A99D0009CDAAA /* RISearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B13AC194A99D0009CDAAA /* RISearchTableViewController.m */; };
+		609B13B0194A9D06009CDAAA /* RIProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B13AF194A9D06009CDAAA /* RIProductTableViewCell.m */; };
+		609B13B3194AA40F009CDAAA /* RITitleScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B13B2194AA40F009CDAAA /* RITitleScreenViewController.m */; };
+		609B13B8194AA8A3009CDAAA /* iToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B13B7194AA8A3009CDAAA /* iToast.m */; };
+		609B13BC194AA8D0009CDAAA /* iToast.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 609B13B9194AA8D0009CDAAA /* iToast.podspec */; };
+		609B13BD194AA8D0009CDAAA /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 609B13BA194AA8D0009CDAAA /* LICENSE.txt */; };
+		609B13BE194AA8D0009CDAAA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 609B13BB194AA8D0009CDAAA /* README.md */; };
+		609B13C1194AD594009CDAAA /* RILoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B13C0194AD594009CDAAA /* RILoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +69,19 @@
 		609B13A619494DE3009CDAAA /* RIRestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIRestClient.m; sourceTree = "<group>"; };
 		609B13A819494E61009CDAAA /* RIProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIProduct.h; sourceTree = "<group>"; };
 		609B13A919494E61009CDAAA /* RIProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIProduct.m; sourceTree = "<group>"; };
+		609B13AB194A99D0009CDAAA /* RISearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RISearchTableViewController.h; sourceTree = "<group>"; };
+		609B13AC194A99D0009CDAAA /* RISearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RISearchTableViewController.m; sourceTree = "<group>"; };
+		609B13AE194A9D06009CDAAA /* RIProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIProductTableViewCell.h; sourceTree = "<group>"; };
+		609B13AF194A9D06009CDAAA /* RIProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIProductTableViewCell.m; sourceTree = "<group>"; };
+		609B13B1194AA40F009CDAAA /* RITitleScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITitleScreenViewController.h; sourceTree = "<group>"; };
+		609B13B2194AA40F009CDAAA /* RITitleScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITitleScreenViewController.m; sourceTree = "<group>"; };
+		609B13B6194AA8A3009CDAAA /* iToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iToast.h; path = "../../../../../../Projects/toast-notifications-ios/iToast.h"; sourceTree = "<group>"; };
+		609B13B7194AA8A3009CDAAA /* iToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iToast.m; path = "../../../../../../Projects/toast-notifications-ios/iToast.m"; sourceTree = "<group>"; };
+		609B13B9194AA8D0009CDAAA /* iToast.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = iToast.podspec; path = "../../../../../../Projects/toast-notifications-ios/iToast.podspec"; sourceTree = "<group>"; };
+		609B13BA194AA8D0009CDAAA /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.txt; path = "../../../../../../Projects/toast-notifications-ios/LICENSE.txt"; sourceTree = "<group>"; };
+		609B13BB194AA8D0009CDAAA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = "../../../../../../Projects/toast-notifications-ios/README.md"; sourceTree = "<group>"; };
+		609B13BF194AD594009CDAAA /* RILoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RILoginViewController.h; sourceTree = "<group>"; };
+		609B13C0194AD594009CDAAA /* RILoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RILoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,18 +141,27 @@
 		601EDBB8194459620068C168 /* RateIt */ = {
 			isa = PBXGroup;
 			children = (
+				601EDBCD194459630068C168 /* Images.xcassets */,
+				601EDBC7194459630068C168 /* Main_iPad.storyboard */,
+				601EDBC4194459620068C168 /* Main_iPhone.storyboard */,
 				601EDBC1194459620068C168 /* RIAppDelegate.h */,
 				601EDBC2194459620068C168 /* RIAppDelegate.m */,
-				601EDBC4194459620068C168 /* Main_iPhone.storyboard */,
-				601EDBC7194459630068C168 /* Main_iPad.storyboard */,
-				601EDBCA194459630068C168 /* RIViewController.h */,
-				601EDBCB194459630068C168 /* RIViewController.m */,
-				601EDBCD194459630068C168 /* Images.xcassets */,
-				601EDBB9194459620068C168 /* Supporting Files */,
-				609B13A519494DE3009CDAAA /* RIRestClient.h */,
-				609B13A619494DE3009CDAAA /* RIRestClient.m */,
+				609B13BF194AD594009CDAAA /* RILoginViewController.h */,
+				609B13C0194AD594009CDAAA /* RILoginViewController.m */,
 				609B13A819494E61009CDAAA /* RIProduct.h */,
 				609B13A919494E61009CDAAA /* RIProduct.m */,
+				609B13AE194A9D06009CDAAA /* RIProductTableViewCell.h */,
+				609B13AF194A9D06009CDAAA /* RIProductTableViewCell.m */,
+				609B13A519494DE3009CDAAA /* RIRestClient.h */,
+				609B13A619494DE3009CDAAA /* RIRestClient.m */,
+				609B13AB194A99D0009CDAAA /* RISearchTableViewController.h */,
+				609B13AC194A99D0009CDAAA /* RISearchTableViewController.m */,
+				609B13B1194AA40F009CDAAA /* RITitleScreenViewController.h */,
+				609B13B2194AA40F009CDAAA /* RITitleScreenViewController.m */,
+				601EDBCA194459630068C168 /* RIViewController.h */,
+				601EDBCB194459630068C168 /* RIViewController.m */,
+				601EDBB9194459620068C168 /* Supporting Files */,
+				609B13B4194AA87E009CDAAA /* ThirdParty */,
 			);
 			path = RateIt;
 			sourceTree = "<group>";
@@ -163,6 +193,26 @@
 				601EDBDD194459640068C168 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		609B13B4194AA87E009CDAAA /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				609B13B5194AA889009CDAAA /* iToast */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		609B13B5194AA889009CDAAA /* iToast */ = {
+			isa = PBXGroup;
+			children = (
+				609B13B9194AA8D0009CDAAA /* iToast.podspec */,
+				609B13BA194AA8D0009CDAAA /* LICENSE.txt */,
+				609B13BB194AA8D0009CDAAA /* README.md */,
+				609B13B6194AA8A3009CDAAA /* iToast.h */,
+				609B13B7194AA8A3009CDAAA /* iToast.m */,
+			);
+			name = iToast;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,9 +292,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				609B13BD194AA8D0009CDAAA /* LICENSE.txt in Resources */,
 				601EDBC9194459630068C168 /* Main_iPad.storyboard in Resources */,
 				601EDBCE194459630068C168 /* Images.xcassets in Resources */,
+				609B13BE194AA8D0009CDAAA /* README.md in Resources */,
 				601EDBC6194459620068C168 /* Main_iPhone.storyboard in Resources */,
+				609B13BC194AA8D0009CDAAA /* iToast.podspec in Resources */,
 				601EDBBD194459620068C168 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,10 +317,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				609B13B8194AA8A3009CDAAA /* iToast.m in Sources */,
 				601EDBBF194459620068C168 /* main.m in Sources */,
 				609B13A719494DE3009CDAAA /* RIRestClient.m in Sources */,
+				609B13AD194A99D0009CDAAA /* RISearchTableViewController.m in Sources */,
 				601EDBC3194459620068C168 /* RIAppDelegate.m in Sources */,
+				609B13C1194AD594009CDAAA /* RILoginViewController.m in Sources */,
+				609B13B3194AA40F009CDAAA /* RITitleScreenViewController.m in Sources */,
 				609B13AA19494E61009CDAAA /* RIProduct.m in Sources */,
+				609B13B0194A9D06009CDAAA /* RIProductTableViewCell.m in Sources */,
 				601EDBCC194459630068C168 /* RIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
