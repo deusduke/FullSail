@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		605D37D01999178B005990E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37CF1999178B005990E8 /* Foundation.framework */; };
+		605D37D21999178B005990E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37D11999178B005990E8 /* CoreGraphics.framework */; };
+		605D37D41999178B005990E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37D31999178B005990E8 /* UIKit.framework */; };
+		605D37DA1999178B005990E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 605D37D81999178B005990E8 /* InfoPlist.strings */; };
+		605D37DC1999178B005990E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D37DB1999178B005990E8 /* main.m */; };
+		605D37E01999178B005990E8 /* WOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D37DF1999178B005990E8 /* WOAppDelegate.m */; };
+		605D37E31999178B005990E8 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 605D37E11999178B005990E8 /* Main_iPhone.storyboard */; };
+		605D37E61999178B005990E8 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 605D37E41999178B005990E8 /* Main_iPad.storyboard */; };
+		605D37E91999178B005990E8 /* WOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D37E81999178B005990E8 /* WOViewController.m */; };
+		605D37EB1999178B005990E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 605D37EA1999178B005990E8 /* Images.xcassets */; };
+		605D37F21999178C005990E8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37F11999178C005990E8 /* XCTest.framework */; };
+		605D37F31999178C005990E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37CF1999178B005990E8 /* Foundation.framework */; };
+		605D37F41999178C005990E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37D31999178B005990E8 /* UIKit.framework */; };
+		605D37FC1999178C005990E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 605D37FA1999178C005990E8 /* InfoPlist.strings */; };
+		605D37FE1999178C005990E8 /* WorkOutzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D37FD1999178C005990E8 /* WorkOutzTests.m */; };
+		605D380C1999EA27005990E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37CF1999178B005990E8 /* Foundation.framework */; };
+		605D38191999EA27005990E8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37F11999178C005990E8 /* XCTest.framework */; };
+		605D381A1999EA27005990E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37CF1999178B005990E8 /* Foundation.framework */; };
+		605D381B1999EA27005990E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37D31999178B005990E8 /* UIKit.framework */; };
+		605D381E1999EA27005990E8 /* libCommonViews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D380B1999EA27005990E8 /* libCommonViews.a */; };
+		605D3832199C06F2005990E8 /* WOBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D3831199C06F2005990E8 /* WOBorderButton.m */; };
+		605D3835199D0573005990E8 /* WOCreateWorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D3834199D0573005990E8 /* WOCreateWorkoutViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		605D37F51999178C005990E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 605D37C41999178B005990E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 605D37CB1999178B005990E8;
+			remoteInfo = WorkOutz;
+		};
+		605D381C1999EA27005990E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 605D37C41999178B005990E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 605D380A1999EA27005990E8;
+			remoteInfo = CommonViews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		605D38091999EA27005990E8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		605D37CC1999178B005990E8 /* WorkOutz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkOutz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		605D37CF1999178B005990E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		605D37D11999178B005990E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		605D37D31999178B005990E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		605D37D71999178B005990E8 /* WorkOutz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WorkOutz-Info.plist"; sourceTree = "<group>"; };
+		605D37D91999178B005990E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		605D37DB1999178B005990E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		605D37DD1999178B005990E8 /* WorkOutz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WorkOutz-Prefix.pch"; sourceTree = "<group>"; };
+		605D37DE1999178B005990E8 /* WOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WOAppDelegate.h; sourceTree = "<group>"; };
+		605D37DF1999178B005990E8 /* WOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WOAppDelegate.m; sourceTree = "<group>"; };
+		605D37E21999178B005990E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		605D37E51999178B005990E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		605D37E71999178B005990E8 /* WOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WOViewController.h; sourceTree = "<group>"; };
+		605D37E81999178B005990E8 /* WOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WOViewController.m; sourceTree = "<group>"; };
+		605D37EA1999178B005990E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		605D37F01999178C005990E8 /* WorkOutzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkOutzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		605D37F11999178C005990E8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		605D37F91999178C005990E8 /* WorkOutzTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WorkOutzTests-Info.plist"; sourceTree = "<group>"; };
+		605D37FB1999178C005990E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		605D37FD1999178C005990E8 /* WorkOutzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkOutzTests.m; sourceTree = "<group>"; };
+		605D380B1999EA27005990E8 /* libCommonViews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCommonViews.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		605D38181999EA27005990E8 /* CommonViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		605D3830199C06F2005990E8 /* WOBorderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOBorderButton.h; sourceTree = "<group>"; };
+		605D3831199C06F2005990E8 /* WOBorderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOBorderButton.m; sourceTree = "<group>"; };
+		605D3833199D0573005990E8 /* WOCreateWorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCreateWorkoutViewController.h; sourceTree = "<group>"; };
+		605D3834199D0573005990E8 /* WOCreateWorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCreateWorkoutViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		605D37C91999178B005990E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605D37D21999178B005990E8 /* CoreGraphics.framework in Frameworks */,
+				605D37D41999178B005990E8 /* UIKit.framework in Frameworks */,
+				605D37D01999178B005990E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		605D37ED1999178C005990E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605D37F21999178C005990E8 /* XCTest.framework in Frameworks */,
+				605D37F41999178C005990E8 /* UIKit.framework in Frameworks */,
+				605D37F31999178C005990E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		605D38081999EA27005990E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605D380C1999EA27005990E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		605D38151999EA27005990E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605D38191999EA27005990E8 /* XCTest.framework in Frameworks */,
+				605D381E1999EA27005990E8 /* libCommonViews.a in Frameworks */,
+				605D381B1999EA27005990E8 /* UIKit.framework in Frameworks */,
+				605D381A1999EA27005990E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		605D37C31999178B005990E8 = {
+			isa = PBXGroup;
+			children = (
+				605D37D51999178B005990E8 /* WorkOutz */,
+				605D37F71999178C005990E8 /* WorkOutzTests */,
+				605D37CE1999178B005990E8 /* Frameworks */,
+				605D37CD1999178B005990E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		605D37CD1999178B005990E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				605D37CC1999178B005990E8 /* WorkOutz.app */,
+				605D37F01999178C005990E8 /* WorkOutzTests.xctest */,
+				605D380B1999EA27005990E8 /* libCommonViews.a */,
+				605D38181999EA27005990E8 /* CommonViewsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		605D37CE1999178B005990E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				605D37CF1999178B005990E8 /* Foundation.framework */,
+				605D37D11999178B005990E8 /* CoreGraphics.framework */,
+				605D37D31999178B005990E8 /* UIKit.framework */,
+				605D37F11999178C005990E8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		605D37D51999178B005990E8 /* WorkOutz */ = {
+			isa = PBXGroup;
+			children = (
+				605D3833199D0573005990E8 /* WOCreateWorkoutViewController.h */,
+				605D3834199D0573005990E8 /* WOCreateWorkoutViewController.m */,
+				605D37DE1999178B005990E8 /* WOAppDelegate.h */,
+				605D37DF1999178B005990E8 /* WOAppDelegate.m */,
+				605D37E11999178B005990E8 /* Main_iPhone.storyboard */,
+				605D37E41999178B005990E8 /* Main_iPad.storyboard */,
+				605D37E71999178B005990E8 /* WOViewController.h */,
+				605D37E81999178B005990E8 /* WOViewController.m */,
+				605D37EA1999178B005990E8 /* Images.xcassets */,
+				605D37D61999178B005990E8 /* Supporting Files */,
+				605D3830199C06F2005990E8 /* WOBorderButton.h */,
+				605D3831199C06F2005990E8 /* WOBorderButton.m */,
+			);
+			path = WorkOutz;
+			sourceTree = "<group>";
+		};
+		605D37D61999178B005990E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				605D37D71999178B005990E8 /* WorkOutz-Info.plist */,
+				605D37D81999178B005990E8 /* InfoPlist.strings */,
+				605D37DB1999178B005990E8 /* main.m */,
+				605D37DD1999178B005990E8 /* WorkOutz-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		605D37F71999178C005990E8 /* WorkOutzTests */ = {
+			isa = PBXGroup;
+			children = (
+				605D37FD1999178C005990E8 /* WorkOutzTests.m */,
+				605D37F81999178C005990E8 /* Supporting Files */,
+			);
+			path = WorkOutzTests;
+			sourceTree = "<group>";
+		};
+		605D37F81999178C005990E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				605D37F91999178C005990E8 /* WorkOutzTests-Info.plist */,
+				605D37FA1999178C005990E8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		605D37CB1999178B005990E8 /* WorkOutz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 605D38011999178C005990E8 /* Build configuration list for PBXNativeTarget "WorkOutz" */;
+			buildPhases = (
+				605D37C81999178B005990E8 /* Sources */,
+				605D37C91999178B005990E8 /* Frameworks */,
+				605D37CA1999178B005990E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorkOutz;
+			productName = WorkOutz;
+			productReference = 605D37CC1999178B005990E8 /* WorkOutz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		605D37EF1999178C005990E8 /* WorkOutzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 605D38041999178C005990E8 /* Build configuration list for PBXNativeTarget "WorkOutzTests" */;
+			buildPhases = (
+				605D37EC1999178C005990E8 /* Sources */,
+				605D37ED1999178C005990E8 /* Frameworks */,
+				605D37EE1999178C005990E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				605D37F61999178C005990E8 /* PBXTargetDependency */,
+			);
+			name = WorkOutzTests;
+			productName = WorkOutzTests;
+			productReference = 605D37F01999178C005990E8 /* WorkOutzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		605D380A1999EA27005990E8 /* CommonViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 605D38271999EA27005990E8 /* Build configuration list for PBXNativeTarget "CommonViews" */;
+			buildPhases = (
+				605D38071999EA27005990E8 /* Sources */,
+				605D38081999EA27005990E8 /* Frameworks */,
+				605D38091999EA27005990E8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommonViews;
+			productName = CommonViews;
+			productReference = 605D380B1999EA27005990E8 /* libCommonViews.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		605D38171999EA27005990E8 /* CommonViewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 605D382A1999EA27005990E8 /* Build configuration list for PBXNativeTarget "CommonViewsTests" */;
+			buildPhases = (
+				605D38141999EA27005990E8 /* Sources */,
+				605D38151999EA27005990E8 /* Frameworks */,
+				605D38161999EA27005990E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				605D381D1999EA27005990E8 /* PBXTargetDependency */,
+			);
+			name = CommonViewsTests;
+			productName = CommonViewsTests;
+			productReference = 605D38181999EA27005990E8 /* CommonViewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		605D37C41999178B005990E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WO;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "DEUS Enterprises";
+				TargetAttributes = {
+					605D37EF1999178C005990E8 = {
+						TestTargetID = 605D37CB1999178B005990E8;
+					};
+					605D38171999EA27005990E8 = {
+						TestTargetID = 605D37CB1999178B005990E8;
+					};
+				};
+			};
+			buildConfigurationList = 605D37C71999178B005990E8 /* Build configuration list for PBXProject "WorkOutz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 605D37C31999178B005990E8;
+			productRefGroup = 605D37CD1999178B005990E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				605D37CB1999178B005990E8 /* WorkOutz */,
+				605D37EF1999178C005990E8 /* WorkOutzTests */,
+				605D380A1999EA27005990E8 /* CommonViews */,
+				605D38171999EA27005990E8 /* CommonViewsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		605D37CA1999178B005990E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605D37E61999178B005990E8 /* Main_iPad.storyboard in Resources */,
+				605D37EB1999178B005990E8 /* Images.xcassets in Resources */,
+				605D37E31999178B005990E8 /* Main_iPhone.storyboard in Resources */,
+				605D37DA1999178B005990E8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		605D37EE1999178C005990E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605D37FC1999178C005990E8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		605D38161999EA27005990E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		605D37C81999178B005990E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605D37E01999178B005990E8 /* WOAppDelegate.m in Sources */,
+				605D37DC1999178B005990E8 /* main.m in Sources */,
+				605D37E91999178B005990E8 /* WOViewController.m in Sources */,
+				605D3832199C06F2005990E8 /* WOBorderButton.m in Sources */,
+				605D3835199D0573005990E8 /* WOCreateWorkoutViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		605D37EC1999178C005990E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605D37FE1999178C005990E8 /* WorkOutzTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		605D38071999EA27005990E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		605D38141999EA27005990E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		605D37F61999178C005990E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 605D37CB1999178B005990E8 /* WorkOutz */;
+			targetProxy = 605D37F51999178C005990E8 /* PBXContainerItemProxy */;
+		};
+		605D381D1999EA27005990E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 605D380A1999EA27005990E8 /* CommonViews */;
+			targetProxy = 605D381C1999EA27005990E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		605D37D81999178B005990E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				605D37D91999178B005990E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		605D37E11999178B005990E8 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				605D37E21999178B005990E8 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		605D37E41999178B005990E8 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				605D37E51999178B005990E8 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		605D37FA1999178C005990E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				605D37FB1999178C005990E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		605D37FF1999178C005990E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		605D38001999178C005990E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		605D38021999178C005990E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WorkOutz/WorkOutz-Prefix.pch";
+				INFOPLIST_FILE = "WorkOutz/WorkOutz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		605D38031999178C005990E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WorkOutz/WorkOutz-Prefix.pch";
+				INFOPLIST_FILE = "WorkOutz/WorkOutz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		605D38051999178C005990E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WorkOutz.app/WorkOutz";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WorkOutz/WorkOutz-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WorkOutzTests/WorkOutzTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		605D38061999178C005990E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WorkOutz.app/WorkOutz";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WorkOutz/WorkOutz-Prefix.pch";
+				INFOPLIST_FILE = "WorkOutzTests/WorkOutzTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		605D38281999EA27005990E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CommonViews.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CommonViews/CommonViews-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		605D38291999EA27005990E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CommonViews.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CommonViews/CommonViews-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		605D382B1999EA27005990E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WorkOutz.app/WorkOutz";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CommonViews/CommonViews-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CommonViewsTests/CommonViewsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		605D382C1999EA27005990E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WorkOutz.app/WorkOutz";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CommonViews/CommonViews-Prefix.pch";
+				INFOPLIST_FILE = "CommonViewsTests/CommonViewsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		605D37C71999178B005990E8 /* Build configuration list for PBXProject "WorkOutz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				605D37FF1999178C005990E8 /* Debug */,
+				605D38001999178C005990E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		605D38011999178C005990E8 /* Build configuration list for PBXNativeTarget "WorkOutz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				605D38021999178C005990E8 /* Debug */,
+				605D38031999178C005990E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		605D38041999178C005990E8 /* Build configuration list for PBXNativeTarget "WorkOutzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				605D38051999178C005990E8 /* Debug */,
+				605D38061999178C005990E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		605D38271999EA27005990E8 /* Build configuration list for PBXNativeTarget "CommonViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				605D38281999EA27005990E8 /* Debug */,
+				605D38291999EA27005990E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		605D382A1999EA27005990E8 /* Build configuration list for PBXNativeTarget "CommonViewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				605D382B1999EA27005990E8 /* Debug */,
+				605D382C1999EA27005990E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 605D37C41999178B005990E8 /* Project object */;
+}
