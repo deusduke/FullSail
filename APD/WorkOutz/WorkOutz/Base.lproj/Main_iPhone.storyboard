@@ -33,6 +33,9 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.048185687346428807" green="0.39311139798630279" blue="0.7765066964285714" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="goToHistory:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eJF-dA-uye"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sny-eB-yzu" customClass="WOBorderButton">
                                 <rect key="frame" x="160" y="374" width="160" height="130"/>
@@ -51,6 +54,9 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.048185687349999999" green="0.393111398" blue="0.77650669640000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="goToStats:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TwB-0d-Mqv"/>
+                                </connections>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main_slide" translatesAutoresizingMaskIntoConstraints="NO" id="PFX-in-EaZ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
@@ -73,6 +79,9 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.048185687349999999" green="0.393111398" blue="0.77650669640000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="goToWorkouts:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7Ge-E9-eSh"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nhF-Xg-YFw" customClass="WOBorderButton">
                                 <rect key="frame" x="160" y="243" width="160" height="130"/>
@@ -91,27 +100,35 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.048185687349999999" green="0.393111398" blue="0.77650669640000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="goToCreate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="L20-gC-CI3"/>
+                                </connections>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.023084338754415512" green="0.22993229329586029" blue="0.52303147315979004" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.023084338749999999" green="0.22993229330000001" blue="0.52303147319999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="WorkOutz" id="MZc-ZH-X9s"/>
                     <connections>
-                        <segue destination="sdA-6g-Bgt" kind="push" identifier="createWorkout" id="CVc-SN-R0x"/>
+                        <outlet property="createWorkoutButton" destination="nhF-Xg-YFw" id="aN4-Pc-FEI"/>
+                        <outlet property="previewWorkoutsButton" destination="EkQ-YE-2EX" id="ted-Ho-NiU"/>
+                        <outlet property="statsButton" destination="Sny-eB-yzu" id="1dH-fK-Ty5"/>
+                        <outlet property="viewWorkoutsButton" destination="WgB-s2-OT6" id="BFu-vj-0CE"/>
+                        <segue destination="sdA-6g-Bgt" kind="push" identifier="create" id="N8u-la-wVa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="365" y="93"/>
         </scene>
-        <!--Table View Controller - Create Workout-->
+        <!--Create Workout Table View Controller - Create Workout-->
         <scene sceneID="htL-HJ-MBT">
             <objects>
-                <tableViewController id="sdA-6g-Bgt" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dTa-C3-WrJ">
+                <tableViewController id="sdA-6g-Bgt" customClass="WOCreateWorkoutTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dTa-C3-WrJ">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.01176470588" green="0.39607843139999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="pIe-rq-MYc">
                                 <cells>
@@ -143,7 +160,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lq-yx-XtF">
-                                                    <rect key="frame" x="11" y="11" width="51" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="51" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -164,10 +181,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="43j-2H-WeS">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                                                    <rect key="frame" x="6" y="0.0" width="314" height="129"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
@@ -186,7 +202,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No routines yet, hit the button to add some!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yp1-Bn-aQa">
-                                                    <rect key="frame" x="20" y="11" width="334" height="21"/>
+                                                    <rect key="frame" x="14" y="11" width="334" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -228,16 +244,83 @@
                             <outlet property="delegate" destination="sdA-6g-Bgt" id="z3g-jF-anJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Create Workout" id="Bbl-nv-wqE"/>
+                    <navigationItem key="navigationItem" title="Create Workout" id="Bbl-nv-wqE">
+                        <barButtonItem key="rightBarButtonItem" image="button_home" id="qKA-Kd-xKt">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="goToRoot:" destination="sdA-6g-Bgt" id="ubZ-Rv-OlS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="aq6-rm-ttI" kind="push" identifier="routines" id="PQw-Ke-Mx3"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Oy-CT-vdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="893" y="93"/>
         </scene>
+        <!--View Routines Table View Controller - Routines-->
+        <scene sceneID="c5j-bl-qBf">
+            <objects>
+                <tableViewController id="aq6-rm-ttI" customClass="WOViewRoutinesTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cM0-Gd-Wg8">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="routine" rowHeight="80" id="6G5-V3-X7Q" customClass="WOThumbnailTableViewCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6G5-V3-X7Q" id="wA5-4y-HA2">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="euO-ez-7yF">
+                                            <rect key="frame" x="20" y="8" width="64" height="64"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Routine Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSQ-QK-Cf6">
+                                            <rect key="frame" x="92" y="20" width="208" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weighted Reps" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JP8-va-MK1">
+                                            <rect key="frame" x="92" y="38" width="208" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="detailLabel" destination="JP8-va-MK1" id="w7K-yt-8rc"/>
+                                    <outlet property="thumbnailImage" destination="euO-ez-7yF" id="2Ym-gP-bxb"/>
+                                    <outlet property="titleLabel" destination="aSQ-QK-Cf6" id="xqG-06-7Vy"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aq6-rm-ttI" id="OKf-Bt-xtA"/>
+                            <outlet property="delegate" destination="aq6-rm-ttI" id="UE8-EJ-Vbk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Routines" id="gp0-y9-Azi">
+                        <barButtonItem key="backBarButtonItem" title=" " id="EbB-bY-dGx"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3T-dk-3mC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1459" y="93"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mxt-JY-YmH">
             <objects>
                 <navigationController definesPresentationContext="YES" id="Z7t-2b-eGZ" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="4B4-hZ-qC9">
                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
@@ -256,6 +339,7 @@
         <image name="button_barbell" width="184" height="178"/>
         <image name="button_create" width="184" height="178"/>
         <image name="button_history" width="184" height="178"/>
+        <image name="button_home" width="22" height="22"/>
         <image name="button_stats" width="184" height="178"/>
         <image name="main_slide" width="640" height="479"/>
     </resources>

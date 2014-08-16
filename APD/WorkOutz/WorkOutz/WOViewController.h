@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WOBorderButton.h"
 
 @interface WOViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet WOBorderButton *previewWorkoutsButton;
+@property (weak, nonatomic) IBOutlet WOBorderButton *statsButton;
+@property (weak, nonatomic) IBOutlet WOBorderButton *viewWorkoutsButton;
+@property (weak, nonatomic) IBOutlet WOBorderButton *createWorkoutButton;
+
+- (IBAction)goToHistory:(id)sender;
+- (IBAction)goToStats:(id)sender;
+- (IBAction)goToWorkouts:(id)sender;
+- (IBAction)goToCreate:(id)sender;
 
 @end

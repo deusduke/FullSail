@@ -28,7 +28,9 @@
 		605D381B1999EA27005990E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37D31999178B005990E8 /* UIKit.framework */; };
 		605D381E1999EA27005990E8 /* libCommonViews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D380B1999EA27005990E8 /* libCommonViews.a */; };
 		605D3832199C06F2005990E8 /* WOBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D3831199C06F2005990E8 /* WOBorderButton.m */; };
-		605D3835199D0573005990E8 /* WOCreateWorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D3834199D0573005990E8 /* WOCreateWorkoutViewController.m */; };
+		605D3838199DA03C005990E8 /* WOCreateWorkoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D3837199DA03C005990E8 /* WOCreateWorkoutTableViewController.m */; };
+		605D383B199EE9D4005990E8 /* WOViewRoutinesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D383A199EE9D4005990E8 /* WOViewRoutinesTableViewController.m */; };
+		605D383E199EEA37005990E8 /* WOThumbnailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D383D199EEA37005990E8 /* WOThumbnailTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +87,12 @@
 		605D38181999EA27005990E8 /* CommonViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		605D3830199C06F2005990E8 /* WOBorderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOBorderButton.h; sourceTree = "<group>"; };
 		605D3831199C06F2005990E8 /* WOBorderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOBorderButton.m; sourceTree = "<group>"; };
-		605D3833199D0573005990E8 /* WOCreateWorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCreateWorkoutViewController.h; sourceTree = "<group>"; };
-		605D3834199D0573005990E8 /* WOCreateWorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCreateWorkoutViewController.m; sourceTree = "<group>"; };
+		605D3836199DA03C005990E8 /* WOCreateWorkoutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCreateWorkoutTableViewController.h; sourceTree = "<group>"; };
+		605D3837199DA03C005990E8 /* WOCreateWorkoutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCreateWorkoutTableViewController.m; sourceTree = "<group>"; };
+		605D3839199EE9D4005990E8 /* WOViewRoutinesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOViewRoutinesTableViewController.h; sourceTree = "<group>"; };
+		605D383A199EE9D4005990E8 /* WOViewRoutinesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOViewRoutinesTableViewController.m; sourceTree = "<group>"; };
+		605D383C199EEA37005990E8 /* WOThumbnailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOThumbnailTableViewCell.h; sourceTree = "<group>"; };
+		605D383D199EEA37005990E8 /* WOThumbnailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOThumbnailTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,8 +173,6 @@
 		605D37D51999178B005990E8 /* WorkOutz */ = {
 			isa = PBXGroup;
 			children = (
-				605D3833199D0573005990E8 /* WOCreateWorkoutViewController.h */,
-				605D3834199D0573005990E8 /* WOCreateWorkoutViewController.m */,
 				605D37DE1999178B005990E8 /* WOAppDelegate.h */,
 				605D37DF1999178B005990E8 /* WOAppDelegate.m */,
 				605D37E11999178B005990E8 /* Main_iPhone.storyboard */,
@@ -179,6 +183,12 @@
 				605D37D61999178B005990E8 /* Supporting Files */,
 				605D3830199C06F2005990E8 /* WOBorderButton.h */,
 				605D3831199C06F2005990E8 /* WOBorderButton.m */,
+				605D3836199DA03C005990E8 /* WOCreateWorkoutTableViewController.h */,
+				605D3837199DA03C005990E8 /* WOCreateWorkoutTableViewController.m */,
+				605D3839199EE9D4005990E8 /* WOViewRoutinesTableViewController.h */,
+				605D383A199EE9D4005990E8 /* WOViewRoutinesTableViewController.m */,
+				605D383C199EEA37005990E8 /* WOThumbnailTableViewCell.h */,
+				605D383D199EEA37005990E8 /* WOThumbnailTableViewCell.m */,
 			);
 			path = WorkOutz;
 			sourceTree = "<group>";
@@ -358,11 +368,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				605D383E199EEA37005990E8 /* WOThumbnailTableViewCell.m in Sources */,
 				605D37E01999178B005990E8 /* WOAppDelegate.m in Sources */,
+				605D3838199DA03C005990E8 /* WOCreateWorkoutTableViewController.m in Sources */,
 				605D37DC1999178B005990E8 /* main.m in Sources */,
 				605D37E91999178B005990E8 /* WOViewController.m in Sources */,
 				605D3832199C06F2005990E8 /* WOBorderButton.m in Sources */,
-				605D3835199D0573005990E8 /* WOCreateWorkoutViewController.m in Sources */,
+				605D383B199EE9D4005990E8 /* WOViewRoutinesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
