@@ -1,0 +1,19 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, "6.0"
+
+target "WorkOutz" do
+  pod 'SDWebImage', '~>3.6' 
+end
+
+target "WorkOutzTests" do
+
+end
+
+target "CommonViews" do
+
+end
+
+target "CommonViewsTests" do
+
+end
+

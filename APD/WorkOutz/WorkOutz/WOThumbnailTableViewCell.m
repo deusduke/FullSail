@@ -7,6 +7,7 @@
 //
 
 #import "WOThumbnailTableViewCell.h"
+#import "UIImageView+WebCache.h"
 
 @implementation WOThumbnailTableViewCell
 
@@ -31,6 +32,13 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)updateImageAsynchWithURL:(NSString *)imageURL
+{
+    [self.thumbnailImage sd_setImageWithURL:[NSURL URLWithString:imageURL]
+              placeholderImage:[UIImage imageNamed:@"placeholder"]
+                       options:SDWebImageRefreshCached];
 }
 
 @end

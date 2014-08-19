@@ -1,806 +1,1912 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		6030D7BD19A3254D00A10BE5 /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6030D7BC19A3254D00A10BE5 /* Workout.m */; };
-		6030D7C019A3254E00A10BE5 /* Routine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6030D7BF19A3254E00A10BE5 /* Routine.m */; };
-		6030D7C319A3254E00A10BE5 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6030D7C219A3254E00A10BE5 /* Settings.m */; };
-		6030D80E19A32DC700A10BE5 /* Workoutz Initializer.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6030D80D19A32DC700A10BE5 /* Workoutz Initializer.sqlite */; };
-		605D37D01999178B005990E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37CF1999178B005990E8 /* Foundation.framework */; };
-		605D37D21999178B005990E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37D11999178B005990E8 /* CoreGraphics.framework */; };
-		605D37D41999178B005990E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37D31999178B005990E8 /* UIKit.framework */; };
-		605D37DA1999178B005990E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 605D37D81999178B005990E8 /* InfoPlist.strings */; };
-		605D37DC1999178B005990E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D37DB1999178B005990E8 /* main.m */; };
-		605D37E01999178B005990E8 /* WOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D37DF1999178B005990E8 /* WOAppDelegate.m */; };
-		605D37E31999178B005990E8 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 605D37E11999178B005990E8 /* Main_iPhone.storyboard */; };
-		605D37E61999178B005990E8 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 605D37E41999178B005990E8 /* Main_iPad.storyboard */; };
-		605D37E91999178B005990E8 /* WOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D37E81999178B005990E8 /* WOViewController.m */; };
-		605D37EB1999178B005990E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 605D37EA1999178B005990E8 /* Images.xcassets */; };
-		605D37F21999178C005990E8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37F11999178C005990E8 /* XCTest.framework */; };
-		605D37F31999178C005990E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37CF1999178B005990E8 /* Foundation.framework */; };
-		605D37F41999178C005990E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37D31999178B005990E8 /* UIKit.framework */; };
-		605D37FC1999178C005990E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 605D37FA1999178C005990E8 /* InfoPlist.strings */; };
-		605D37FE1999178C005990E8 /* WorkOutzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D37FD1999178C005990E8 /* WorkOutzTests.m */; };
-		605D380C1999EA27005990E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37CF1999178B005990E8 /* Foundation.framework */; };
-		605D38191999EA27005990E8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37F11999178C005990E8 /* XCTest.framework */; };
-		605D381A1999EA27005990E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37CF1999178B005990E8 /* Foundation.framework */; };
-		605D381B1999EA27005990E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37D31999178B005990E8 /* UIKit.framework */; };
-		605D381E1999EA27005990E8 /* libCommonViews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D380B1999EA27005990E8 /* libCommonViews.a */; };
-		605D3832199C06F2005990E8 /* WOBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D3831199C06F2005990E8 /* WOBorderButton.m */; };
-		605D3838199DA03C005990E8 /* WOCreateWorkoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D3837199DA03C005990E8 /* WOCreateWorkoutTableViewController.m */; };
-		605D383B199EE9D4005990E8 /* WOViewRoutinesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D383A199EE9D4005990E8 /* WOViewRoutinesTableViewController.m */; };
-		605D383E199EEA37005990E8 /* WOThumbnailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D383D199EEA37005990E8 /* WOThumbnailTableViewCell.m */; };
-		605D384419A05419005990E8 /* WOUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D384319A05419005990E8 /* WOUtilities.m */; };
-		605D385619A0589E005990E8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D385519A0589E005990E8 /* CoreData.framework */; };
-		605D38AC19A1D4A0005990E8 /* WorkoutzModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 605D38AA19A1D4A0005990E8 /* WorkoutzModel.xcdatamodeld */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6030D7F119A3261D00A10BE5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6030D7ED19A3261D00A10BE5 /* Workoutz Initializer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6030D7D719A3261D00A10BE5;
-			remoteInfo = "Workoutz Initializer";
-		};
-		605D37F51999178C005990E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 605D37C41999178B005990E8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 605D37CB1999178B005990E8;
-			remoteInfo = WorkOutz;
-		};
-		605D381C1999EA27005990E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 605D37C41999178B005990E8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 605D380A1999EA27005990E8;
-			remoteInfo = CommonViews;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		605D38091999EA27005990E8 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		6030D7BB19A3254D00A10BE5 /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workout.h; sourceTree = "<group>"; };
-		6030D7BC19A3254D00A10BE5 /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workout.m; sourceTree = "<group>"; };
-		6030D7BE19A3254E00A10BE5 /* Routine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Routine.h; sourceTree = "<group>"; };
-		6030D7BF19A3254E00A10BE5 /* Routine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Routine.m; sourceTree = "<group>"; };
-		6030D7C119A3254E00A10BE5 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
-		6030D7C219A3254E00A10BE5 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
-		6030D7ED19A3261D00A10BE5 /* Workoutz Initializer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Workoutz Initializer.xcodeproj"; path = "Workoutz Initializer/Workoutz Initializer.xcodeproj"; sourceTree = "<group>"; };
-		6030D80D19A32DC700A10BE5 /* Workoutz Initializer.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Workoutz Initializer.sqlite"; sourceTree = "<group>"; };
-		605D37CC1999178B005990E8 /* WorkOutz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkOutz.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		605D37CF1999178B005990E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		605D37D11999178B005990E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		605D37D31999178B005990E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		605D37D71999178B005990E8 /* WorkOutz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WorkOutz-Info.plist"; sourceTree = "<group>"; };
-		605D37D91999178B005990E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		605D37DB1999178B005990E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		605D37DD1999178B005990E8 /* WorkOutz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WorkOutz-Prefix.pch"; sourceTree = "<group>"; };
-		605D37DE1999178B005990E8 /* WOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WOAppDelegate.h; sourceTree = "<group>"; };
-		605D37DF1999178B005990E8 /* WOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WOAppDelegate.m; sourceTree = "<group>"; };
-		605D37E21999178B005990E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		605D37E51999178B005990E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		605D37E71999178B005990E8 /* WOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WOViewController.h; sourceTree = "<group>"; };
-		605D37E81999178B005990E8 /* WOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WOViewController.m; sourceTree = "<group>"; };
-		605D37EA1999178B005990E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		605D37F01999178C005990E8 /* WorkOutzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkOutzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		605D37F11999178C005990E8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		605D37F91999178C005990E8 /* WorkOutzTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WorkOutzTests-Info.plist"; sourceTree = "<group>"; };
-		605D37FB1999178C005990E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		605D37FD1999178C005990E8 /* WorkOutzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkOutzTests.m; sourceTree = "<group>"; };
-		605D380B1999EA27005990E8 /* libCommonViews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCommonViews.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		605D38181999EA27005990E8 /* CommonViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		605D3830199C06F2005990E8 /* WOBorderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOBorderButton.h; sourceTree = "<group>"; };
-		605D3831199C06F2005990E8 /* WOBorderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOBorderButton.m; sourceTree = "<group>"; };
-		605D3836199DA03C005990E8 /* WOCreateWorkoutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCreateWorkoutTableViewController.h; sourceTree = "<group>"; };
-		605D3837199DA03C005990E8 /* WOCreateWorkoutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCreateWorkoutTableViewController.m; sourceTree = "<group>"; };
-		605D3839199EE9D4005990E8 /* WOViewRoutinesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOViewRoutinesTableViewController.h; sourceTree = "<group>"; };
-		605D383A199EE9D4005990E8 /* WOViewRoutinesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOViewRoutinesTableViewController.m; sourceTree = "<group>"; };
-		605D383C199EEA37005990E8 /* WOThumbnailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOThumbnailTableViewCell.h; sourceTree = "<group>"; };
-		605D383D199EEA37005990E8 /* WOThumbnailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOThumbnailTableViewCell.m; sourceTree = "<group>"; };
-		605D384219A05419005990E8 /* WOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOUtilities.h; sourceTree = "<group>"; };
-		605D384319A05419005990E8 /* WOUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOUtilities.m; sourceTree = "<group>"; };
-		605D385519A0589E005990E8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		605D38AB19A1D4A0005990E8 /* WorkoutzModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkoutzModel.xcdatamodel; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		605D37C91999178B005990E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				605D385619A0589E005990E8 /* CoreData.framework in Frameworks */,
-				605D37D21999178B005990E8 /* CoreGraphics.framework in Frameworks */,
-				605D37D41999178B005990E8 /* UIKit.framework in Frameworks */,
-				605D37D01999178B005990E8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		605D37ED1999178C005990E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				605D37F21999178C005990E8 /* XCTest.framework in Frameworks */,
-				605D37F41999178C005990E8 /* UIKit.framework in Frameworks */,
-				605D37F31999178C005990E8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		605D38081999EA27005990E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				605D380C1999EA27005990E8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		605D38151999EA27005990E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				605D38191999EA27005990E8 /* XCTest.framework in Frameworks */,
-				605D381E1999EA27005990E8 /* libCommonViews.a in Frameworks */,
-				605D381B1999EA27005990E8 /* UIKit.framework in Frameworks */,
-				605D381A1999EA27005990E8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		6030D7EE19A3261D00A10BE5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6030D7F219A3261D00A10BE5 /* Workoutz Initializer */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		605D37C31999178B005990E8 = {
-			isa = PBXGroup;
-			children = (
-				6030D7ED19A3261D00A10BE5 /* Workoutz Initializer.xcodeproj */,
-				605D37D51999178B005990E8 /* WorkOutz */,
-				605D37F71999178C005990E8 /* WorkOutzTests */,
-				605D37CE1999178B005990E8 /* Frameworks */,
-				605D37CD1999178B005990E8 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		605D37CD1999178B005990E8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				605D37CC1999178B005990E8 /* WorkOutz.app */,
-				605D37F01999178C005990E8 /* WorkOutzTests.xctest */,
-				605D380B1999EA27005990E8 /* libCommonViews.a */,
-				605D38181999EA27005990E8 /* CommonViewsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		605D37CE1999178B005990E8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				605D385519A0589E005990E8 /* CoreData.framework */,
-				605D37CF1999178B005990E8 /* Foundation.framework */,
-				605D37D11999178B005990E8 /* CoreGraphics.framework */,
-				605D37D31999178B005990E8 /* UIKit.framework */,
-				605D37F11999178C005990E8 /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		605D37D51999178B005990E8 /* WorkOutz */ = {
-			isa = PBXGroup;
-			children = (
-				6030D80D19A32DC700A10BE5 /* Workoutz Initializer.sqlite */,
-				605D38AA19A1D4A0005990E8 /* WorkoutzModel.xcdatamodeld */,
-				605D37DE1999178B005990E8 /* WOAppDelegate.h */,
-				605D37DF1999178B005990E8 /* WOAppDelegate.m */,
-				605D37E11999178B005990E8 /* Main_iPhone.storyboard */,
-				605D37E41999178B005990E8 /* Main_iPad.storyboard */,
-				605D37E71999178B005990E8 /* WOViewController.h */,
-				605D37E81999178B005990E8 /* WOViewController.m */,
-				605D37EA1999178B005990E8 /* Images.xcassets */,
-				605D37D61999178B005990E8 /* Supporting Files */,
-				605D3830199C06F2005990E8 /* WOBorderButton.h */,
-				605D3831199C06F2005990E8 /* WOBorderButton.m */,
-				605D3836199DA03C005990E8 /* WOCreateWorkoutTableViewController.h */,
-				605D3837199DA03C005990E8 /* WOCreateWorkoutTableViewController.m */,
-				605D3839199EE9D4005990E8 /* WOViewRoutinesTableViewController.h */,
-				605D383A199EE9D4005990E8 /* WOViewRoutinesTableViewController.m */,
-				605D383C199EEA37005990E8 /* WOThumbnailTableViewCell.h */,
-				605D383D199EEA37005990E8 /* WOThumbnailTableViewCell.m */,
-				605D384219A05419005990E8 /* WOUtilities.h */,
-				605D384319A05419005990E8 /* WOUtilities.m */,
-				605D385119A0545F005990E8 /* Model */,
-			);
-			path = WorkOutz;
-			sourceTree = "<group>";
-		};
-		605D37D61999178B005990E8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				605D37D71999178B005990E8 /* WorkOutz-Info.plist */,
-				605D37D81999178B005990E8 /* InfoPlist.strings */,
-				605D37DB1999178B005990E8 /* main.m */,
-				605D37DD1999178B005990E8 /* WorkOutz-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		605D37F71999178C005990E8 /* WorkOutzTests */ = {
-			isa = PBXGroup;
-			children = (
-				605D37FD1999178C005990E8 /* WorkOutzTests.m */,
-				605D37F81999178C005990E8 /* Supporting Files */,
-			);
-			path = WorkOutzTests;
-			sourceTree = "<group>";
-		};
-		605D37F81999178C005990E8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				605D37F91999178C005990E8 /* WorkOutzTests-Info.plist */,
-				605D37FA1999178C005990E8 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		605D385119A0545F005990E8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				6030D7C119A3254E00A10BE5 /* Settings.h */,
-				6030D7C219A3254E00A10BE5 /* Settings.m */,
-				6030D7BE19A3254E00A10BE5 /* Routine.h */,
-				6030D7BF19A3254E00A10BE5 /* Routine.m */,
-				6030D7BB19A3254D00A10BE5 /* Workout.h */,
-				6030D7BC19A3254D00A10BE5 /* Workout.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		605D37CB1999178B005990E8 /* WorkOutz */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 605D38011999178C005990E8 /* Build configuration list for PBXNativeTarget "WorkOutz" */;
-			buildPhases = (
-				605D37C81999178B005990E8 /* Sources */,
-				605D37C91999178B005990E8 /* Frameworks */,
-				605D37CA1999178B005990E8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WorkOutz;
-			productName = WorkOutz;
-			productReference = 605D37CC1999178B005990E8 /* WorkOutz.app */;
-			productType = "com.apple.product-type.application";
-		};
-		605D37EF1999178C005990E8 /* WorkOutzTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 605D38041999178C005990E8 /* Build configuration list for PBXNativeTarget "WorkOutzTests" */;
-			buildPhases = (
-				605D37EC1999178C005990E8 /* Sources */,
-				605D37ED1999178C005990E8 /* Frameworks */,
-				605D37EE1999178C005990E8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				605D37F61999178C005990E8 /* PBXTargetDependency */,
-			);
-			name = WorkOutzTests;
-			productName = WorkOutzTests;
-			productReference = 605D37F01999178C005990E8 /* WorkOutzTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		605D380A1999EA27005990E8 /* CommonViews */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 605D38271999EA27005990E8 /* Build configuration list for PBXNativeTarget "CommonViews" */;
-			buildPhases = (
-				605D38071999EA27005990E8 /* Sources */,
-				605D38081999EA27005990E8 /* Frameworks */,
-				605D38091999EA27005990E8 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CommonViews;
-			productName = CommonViews;
-			productReference = 605D380B1999EA27005990E8 /* libCommonViews.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		605D38171999EA27005990E8 /* CommonViewsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 605D382A1999EA27005990E8 /* Build configuration list for PBXNativeTarget "CommonViewsTests" */;
-			buildPhases = (
-				605D38141999EA27005990E8 /* Sources */,
-				605D38151999EA27005990E8 /* Frameworks */,
-				605D38161999EA27005990E8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				605D381D1999EA27005990E8 /* PBXTargetDependency */,
-			);
-			name = CommonViewsTests;
-			productName = CommonViewsTests;
-			productReference = 605D38181999EA27005990E8 /* CommonViewsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		605D37C41999178B005990E8 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = WO;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "DEUS Enterprises";
-				TargetAttributes = {
-					605D37CB1999178B005990E8 = {
-						DevelopmentTeam = LXPCC5U83M;
-					};
-					605D37EF1999178C005990E8 = {
-						TestTargetID = 605D37CB1999178B005990E8;
-					};
-					605D38171999EA27005990E8 = {
-						TestTargetID = 605D37CB1999178B005990E8;
-					};
-				};
-			};
-			buildConfigurationList = 605D37C71999178B005990E8 /* Build configuration list for PBXProject "WorkOutz" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 605D37C31999178B005990E8;
-			productRefGroup = 605D37CD1999178B005990E8 /* Products */;
-			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 6030D7EE19A3261D00A10BE5 /* Products */;
-					ProjectRef = 6030D7ED19A3261D00A10BE5 /* Workoutz Initializer.xcodeproj */;
-				},
-			);
-			projectRoot = "";
-			targets = (
-				605D37CB1999178B005990E8 /* WorkOutz */,
-				605D37EF1999178C005990E8 /* WorkOutzTests */,
-				605D380A1999EA27005990E8 /* CommonViews */,
-				605D38171999EA27005990E8 /* CommonViewsTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		6030D7F219A3261D00A10BE5 /* Workoutz Initializer */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = "Workoutz Initializer";
-			remoteRef = 6030D7F119A3261D00A10BE5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
-/* Begin PBXResourcesBuildPhase section */
-		605D37CA1999178B005990E8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6030D80E19A32DC700A10BE5 /* Workoutz Initializer.sqlite in Resources */,
-				605D37E61999178B005990E8 /* Main_iPad.storyboard in Resources */,
-				605D37EB1999178B005990E8 /* Images.xcassets in Resources */,
-				605D37E31999178B005990E8 /* Main_iPhone.storyboard in Resources */,
-				605D37DA1999178B005990E8 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		605D37EE1999178C005990E8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				605D37FC1999178C005990E8 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		605D38161999EA27005990E8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		605D37C81999178B005990E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				605D383E199EEA37005990E8 /* WOThumbnailTableViewCell.m in Sources */,
-				605D37E01999178B005990E8 /* WOAppDelegate.m in Sources */,
-				6030D7C319A3254E00A10BE5 /* Settings.m in Sources */,
-				605D3838199DA03C005990E8 /* WOCreateWorkoutTableViewController.m in Sources */,
-				605D37DC1999178B005990E8 /* main.m in Sources */,
-				6030D7C019A3254E00A10BE5 /* Routine.m in Sources */,
-				605D37E91999178B005990E8 /* WOViewController.m in Sources */,
-				605D3832199C06F2005990E8 /* WOBorderButton.m in Sources */,
-				605D383B199EE9D4005990E8 /* WOViewRoutinesTableViewController.m in Sources */,
-				6030D7BD19A3254D00A10BE5 /* Workout.m in Sources */,
-				605D38AC19A1D4A0005990E8 /* WorkoutzModel.xcdatamodeld in Sources */,
-				605D384419A05419005990E8 /* WOUtilities.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		605D37EC1999178C005990E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				605D37FE1999178C005990E8 /* WorkOutzTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		605D38071999EA27005990E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		605D38141999EA27005990E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		605D37F61999178C005990E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 605D37CB1999178B005990E8 /* WorkOutz */;
-			targetProxy = 605D37F51999178C005990E8 /* PBXContainerItemProxy */;
-		};
-		605D381D1999EA27005990E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 605D380A1999EA27005990E8 /* CommonViews */;
-			targetProxy = 605D381C1999EA27005990E8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		605D37D81999178B005990E8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				605D37D91999178B005990E8 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		605D37E11999178B005990E8 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				605D37E21999178B005990E8 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		605D37E41999178B005990E8 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				605D37E51999178B005990E8 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		605D37FA1999178C005990E8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				605D37FB1999178C005990E8 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		605D37FF1999178C005990E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		605D38001999178C005990E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		605D38021999178C005990E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WorkOutz/WorkOutz-Prefix.pch";
-				INFOPLIST_FILE = "WorkOutz/WorkOutz-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		605D38031999178C005990E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WorkOutz/WorkOutz-Prefix.pch";
-				INFOPLIST_FILE = "WorkOutz/WorkOutz-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		605D38051999178C005990E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WorkOutz.app/WorkOutz";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WorkOutz/WorkOutz-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "WorkOutzTests/WorkOutzTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		605D38061999178C005990E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WorkOutz.app/WorkOutz";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WorkOutz/WorkOutz-Prefix.pch";
-				INFOPLIST_FILE = "WorkOutzTests/WorkOutzTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-		605D38281999EA27005990E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/CommonViews.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CommonViews/CommonViews-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		605D38291999EA27005990E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/CommonViews.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CommonViews/CommonViews-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		605D382B1999EA27005990E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WorkOutz.app/WorkOutz";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CommonViews/CommonViews-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "CommonViewsTests/CommonViewsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		605D382C1999EA27005990E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WorkOutz.app/WorkOutz";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CommonViews/CommonViews-Prefix.pch";
-				INFOPLIST_FILE = "CommonViewsTests/CommonViewsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		605D37C71999178B005990E8 /* Build configuration list for PBXProject "WorkOutz" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				605D37FF1999178C005990E8 /* Debug */,
-				605D38001999178C005990E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		605D38011999178C005990E8 /* Build configuration list for PBXNativeTarget "WorkOutz" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				605D38021999178C005990E8 /* Debug */,
-				605D38031999178C005990E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		605D38041999178C005990E8 /* Build configuration list for PBXNativeTarget "WorkOutzTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				605D38051999178C005990E8 /* Debug */,
-				605D38061999178C005990E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		605D38271999EA27005990E8 /* Build configuration list for PBXNativeTarget "CommonViews" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				605D38281999EA27005990E8 /* Debug */,
-				605D38291999EA27005990E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		605D382A1999EA27005990E8 /* Build configuration list for PBXNativeTarget "CommonViewsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				605D382B1999EA27005990E8 /* Debug */,
-				605D382C1999EA27005990E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		605D38AA19A1D4A0005990E8 /* WorkoutzModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				605D38AB19A1D4A0005990E8 /* WorkoutzModel.xcdatamodel */,
-			);
-			currentVersion = 605D38AB19A1D4A0005990E8 /* WorkoutzModel.xcdatamodel */;
-			path = WorkoutzModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
-	};
-	rootObject = 605D37C41999178B005990E8 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1CBB1E88EAB94F94831CCCC4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>868F0F7B6FC146D385F1F508</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6030D7BB19A3254D00A10BE5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Workout.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6030D7BC19A3254D00A10BE5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Workout.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6030D7BD19A3254D00A10BE5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6030D7BC19A3254D00A10BE5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6030D7BE19A3254E00A10BE5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Routine.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6030D7BF19A3254E00A10BE5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Routine.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6030D7C019A3254E00A10BE5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6030D7BF19A3254E00A10BE5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6030D7C119A3254E00A10BE5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Settings.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6030D7C219A3254E00A10BE5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Settings.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6030D7C319A3254E00A10BE5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6030D7C219A3254E00A10BE5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6030D7ED19A3261D00A10BE5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.pb-project</string>
+			<key>name</key>
+			<string>Workoutz Initializer.xcodeproj</string>
+			<key>path</key>
+			<string>Workoutz Initializer/Workoutz Initializer.xcodeproj</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6030D7EE19A3261D00A10BE5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6030D7F219A3261D00A10BE5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6030D7F119A3261D00A10BE5</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>6030D7ED19A3261D00A10BE5</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>6030D7D719A3261D00A10BE5</string>
+			<key>remoteInfo</key>
+			<string>Workoutz Initializer</string>
+		</dict>
+		<key>6030D7F219A3261D00A10BE5</key>
+		<dict>
+			<key>fileType</key>
+			<string>compiled.mach-o.executable</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>Workoutz Initializer</string>
+			<key>remoteRef</key>
+			<string>6030D7F119A3261D00A10BE5</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6030D80D19A32DC700A10BE5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file</string>
+			<key>path</key>
+			<string>Workoutz Initializer.sqlite</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6030D80E19A32DC700A10BE5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6030D80D19A32DC700A10BE5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6030D85219A3AF0500A10BE5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>605D37E71999178B005990E8</string>
+				<string>605D37E81999178B005990E8</string>
+				<string>605D3836199DA03C005990E8</string>
+				<string>605D3837199DA03C005990E8</string>
+				<string>605D3839199EE9D4005990E8</string>
+				<string>605D383A199EE9D4005990E8</string>
+				<string>605D383C199EEA37005990E8</string>
+				<string>605D383D199EEA37005990E8</string>
+				<string>605D384219A05419005990E8</string>
+				<string>605D384319A05419005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ViewControllers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37C31999178B005990E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6030D7ED19A3261D00A10BE5</string>
+				<string>605D37D51999178B005990E8</string>
+				<string>605D37F71999178C005990E8</string>
+				<string>605D37CE1999178B005990E8</string>
+				<string>605D37CD1999178B005990E8</string>
+				<string>737F513B45D04399BD99192D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37C41999178B005990E8</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>WO</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>DEUS Enterprises</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>605D37CB1999178B005990E8</key>
+					<dict>
+						<key>DevelopmentTeam</key>
+						<string>LXPCC5U83M</string>
+					</dict>
+					<key>605D37EF1999178C005990E8</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>605D37CB1999178B005990E8</string>
+					</dict>
+					<key>605D38171999EA27005990E8</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>605D37CB1999178B005990E8</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>605D37C71999178B005990E8</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>605D37C31999178B005990E8</string>
+			<key>productRefGroup</key>
+			<string>605D37CD1999178B005990E8</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array>
+				<dict>
+					<key>ProductGroup</key>
+					<string>6030D7EE19A3261D00A10BE5</string>
+					<key>ProjectRef</key>
+					<string>6030D7ED19A3261D00A10BE5</string>
+				</dict>
+			</array>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>605D37CB1999178B005990E8</string>
+				<string>605D37EF1999178C005990E8</string>
+				<string>605D380A1999EA27005990E8</string>
+				<string>605D38171999EA27005990E8</string>
+			</array>
+		</dict>
+		<key>605D37C71999178B005990E8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>605D37FF1999178C005990E8</string>
+				<string>605D38001999178C005990E8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>605D37C81999178B005990E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>605D383E199EEA37005990E8</string>
+				<string>605D37E01999178B005990E8</string>
+				<string>6030D7C319A3254E00A10BE5</string>
+				<string>605D3838199DA03C005990E8</string>
+				<string>605D37DC1999178B005990E8</string>
+				<string>6030D7C019A3254E00A10BE5</string>
+				<string>605D37E91999178B005990E8</string>
+				<string>605D383B199EE9D4005990E8</string>
+				<string>6030D7BD19A3254D00A10BE5</string>
+				<string>605D38AC19A1D4A0005990E8</string>
+				<string>605D384419A05419005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>605D37C91999178B005990E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>605D385619A0589E005990E8</string>
+				<string>605D37D21999178B005990E8</string>
+				<string>605D37D41999178B005990E8</string>
+				<string>605D37D01999178B005990E8</string>
+				<string>1CBB1E88EAB94F94831CCCC4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>605D37CA1999178B005990E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6030D80E19A32DC700A10BE5</string>
+				<string>605D37E61999178B005990E8</string>
+				<string>605D37EB1999178B005990E8</string>
+				<string>605D37E31999178B005990E8</string>
+				<string>605D37DA1999178B005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>605D37CB1999178B005990E8</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>605D38011999178C005990E8</string>
+			<key>buildPhases</key>
+			<array>
+				<string>A4740661F57A4191801CAA22</string>
+				<string>605D37C81999178B005990E8</string>
+				<string>605D37C91999178B005990E8</string>
+				<string>605D37CA1999178B005990E8</string>
+				<string>7FD2613B8B274323A8BA5A21</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>WorkOutz</string>
+			<key>productName</key>
+			<string>WorkOutz</string>
+			<key>productReference</key>
+			<string>605D37CC1999178B005990E8</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>605D37CC1999178B005990E8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>WorkOutz.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>605D37CD1999178B005990E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>605D37CC1999178B005990E8</string>
+				<string>605D37F01999178C005990E8</string>
+				<string>605D380B1999EA27005990E8</string>
+				<string>605D38181999EA27005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37CE1999178B005990E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>605D385519A0589E005990E8</string>
+				<string>605D37CF1999178B005990E8</string>
+				<string>605D37D11999178B005990E8</string>
+				<string>605D37D31999178B005990E8</string>
+				<string>605D37F11999178C005990E8</string>
+				<string>868F0F7B6FC146D385F1F508</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37CF1999178B005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>605D37D01999178B005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37CF1999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D37D11999178B005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>605D37D21999178B005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37D11999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D37D31999178B005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>605D37D41999178B005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37D31999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D37D51999178B005990E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>605D385119A0545F005990E8</string>
+				<string>6030D85219A3AF0500A10BE5</string>
+				<string>6030D80D19A32DC700A10BE5</string>
+				<string>605D38AA19A1D4A0005990E8</string>
+				<string>605D37DE1999178B005990E8</string>
+				<string>605D37DF1999178B005990E8</string>
+				<string>605D37E11999178B005990E8</string>
+				<string>605D37E41999178B005990E8</string>
+				<string>605D37EA1999178B005990E8</string>
+				<string>605D37D61999178B005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>WorkOutz</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37D61999178B005990E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>605D37D71999178B005990E8</string>
+				<string>605D37D81999178B005990E8</string>
+				<string>605D37DB1999178B005990E8</string>
+				<string>605D37DD1999178B005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37D71999178B005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>WorkOutz-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37D81999178B005990E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>605D37D91999178B005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37D91999178B005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37DA1999178B005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37D81999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D37DB1999178B005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37DC1999178B005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37DB1999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D37DD1999178B005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WorkOutz-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37DE1999178B005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WOAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37DF1999178B005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WOAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37E01999178B005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37DF1999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D37E11999178B005990E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>605D37E21999178B005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main_iPhone.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37E21999178B005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main_iPhone.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37E31999178B005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37E11999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D37E41999178B005990E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>605D37E51999178B005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main_iPad.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37E51999178B005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main_iPad.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37E61999178B005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37E41999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D37E71999178B005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WOViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37E81999178B005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WOViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37E91999178B005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37E81999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D37EA1999178B005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37EB1999178B005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37EA1999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D37EC1999178C005990E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>605D37FE1999178C005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>605D37ED1999178C005990E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>605D37F21999178C005990E8</string>
+				<string>605D37F41999178C005990E8</string>
+				<string>605D37F31999178C005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>605D37EE1999178C005990E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>605D37FC1999178C005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>605D37EF1999178C005990E8</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>605D38041999178C005990E8</string>
+			<key>buildPhases</key>
+			<array>
+				<string>605D37EC1999178C005990E8</string>
+				<string>605D37ED1999178C005990E8</string>
+				<string>605D37EE1999178C005990E8</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>605D37F61999178C005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>WorkOutzTests</string>
+			<key>productName</key>
+			<string>WorkOutzTests</string>
+			<key>productReference</key>
+			<string>605D37F01999178C005990E8</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>605D37F01999178C005990E8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>WorkOutzTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>605D37F11999178C005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>605D37F21999178C005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37F11999178C005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D37F31999178C005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37CF1999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D37F41999178C005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37D31999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D37F51999178C005990E8</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>605D37C41999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>605D37CB1999178B005990E8</string>
+			<key>remoteInfo</key>
+			<string>WorkOutz</string>
+		</dict>
+		<key>605D37F61999178C005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>605D37CB1999178B005990E8</string>
+			<key>targetProxy</key>
+			<string>605D37F51999178C005990E8</string>
+		</dict>
+		<key>605D37F71999178C005990E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>605D37FD1999178C005990E8</string>
+				<string>605D37F81999178C005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>WorkOutzTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37F81999178C005990E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>605D37F91999178C005990E8</string>
+				<string>605D37FA1999178C005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37F91999178C005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>WorkOutzTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37FA1999178C005990E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>605D37FB1999178C005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37FB1999178C005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37FC1999178C005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37FA1999178C005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D37FD1999178C005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WorkOutzTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D37FE1999178C005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37FD1999178C005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D37FF1999178C005990E8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>605D38001999178C005990E8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>605D38011999178C005990E8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>605D38021999178C005990E8</string>
+				<string>605D38031999178C005990E8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>605D38021999178C005990E8</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>737F513B45D04399BD99192D</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>WorkOutz/WorkOutz-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>WorkOutz/WorkOutz-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>605D38031999178C005990E8</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>737F513B45D04399BD99192D</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>WorkOutz/WorkOutz-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>WorkOutz/WorkOutz-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>605D38041999178C005990E8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>605D38051999178C005990E8</string>
+				<string>605D38061999178C005990E8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>605D38051999178C005990E8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/WorkOutz.app/WorkOutz</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>WorkOutz/WorkOutz-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>WorkOutzTests/WorkOutzTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>605D38061999178C005990E8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/WorkOutz.app/WorkOutz</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>WorkOutz/WorkOutz-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>WorkOutzTests/WorkOutzTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>605D38071999EA27005990E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>605D38081999EA27005990E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>605D380C1999EA27005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>605D38091999EA27005990E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>dstPath</key>
+			<string>include/$(PRODUCT_NAME)</string>
+			<key>dstSubfolderSpec</key>
+			<string>16</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXCopyFilesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>605D380A1999EA27005990E8</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>605D38271999EA27005990E8</string>
+			<key>buildPhases</key>
+			<array>
+				<string>605D38071999EA27005990E8</string>
+				<string>605D38081999EA27005990E8</string>
+				<string>605D38091999EA27005990E8</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>CommonViews</string>
+			<key>productName</key>
+			<string>CommonViews</string>
+			<key>productReference</key>
+			<string>605D380B1999EA27005990E8</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>605D380B1999EA27005990E8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libCommonViews.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>605D380C1999EA27005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37CF1999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D38141999EA27005990E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>605D38151999EA27005990E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>605D38191999EA27005990E8</string>
+				<string>605D381E1999EA27005990E8</string>
+				<string>605D381B1999EA27005990E8</string>
+				<string>605D381A1999EA27005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>605D38161999EA27005990E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>605D38171999EA27005990E8</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>605D382A1999EA27005990E8</string>
+			<key>buildPhases</key>
+			<array>
+				<string>605D38141999EA27005990E8</string>
+				<string>605D38151999EA27005990E8</string>
+				<string>605D38161999EA27005990E8</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>605D381D1999EA27005990E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>CommonViewsTests</string>
+			<key>productName</key>
+			<string>CommonViewsTests</string>
+			<key>productReference</key>
+			<string>605D38181999EA27005990E8</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>605D38181999EA27005990E8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>CommonViewsTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>605D38191999EA27005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37F11999178C005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D381A1999EA27005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37CF1999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D381B1999EA27005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D37D31999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D381C1999EA27005990E8</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>605D37C41999178B005990E8</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>605D380A1999EA27005990E8</string>
+			<key>remoteInfo</key>
+			<string>CommonViews</string>
+		</dict>
+		<key>605D381D1999EA27005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>605D380A1999EA27005990E8</string>
+			<key>targetProxy</key>
+			<string>605D381C1999EA27005990E8</string>
+		</dict>
+		<key>605D381E1999EA27005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D380B1999EA27005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D38271999EA27005990E8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>605D38281999EA27005990E8</string>
+				<string>605D38291999EA27005990E8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>605D38281999EA27005990E8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>DSTROOT</key>
+				<string>/tmp/CommonViews.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>CommonViews/CommonViews-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>605D38291999EA27005990E8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>DSTROOT</key>
+				<string>/tmp/CommonViews.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>CommonViews/CommonViews-Prefix.pch</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>605D382A1999EA27005990E8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>605D382B1999EA27005990E8</string>
+				<string>605D382C1999EA27005990E8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>605D382B1999EA27005990E8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/WorkOutz.app/WorkOutz</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>CommonViews/CommonViews-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>CommonViewsTests/CommonViewsTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>605D382C1999EA27005990E8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/WorkOutz.app/WorkOutz</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>CommonViews/CommonViews-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>CommonViewsTests/CommonViewsTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>605D3836199DA03C005990E8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WOCreateWorkoutTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D3837199DA03C005990E8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WOCreateWorkoutTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D3838199DA03C005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D3837199DA03C005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D3839199EE9D4005990E8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WOViewRoutinesTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D383A199EE9D4005990E8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WOViewRoutinesTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D383B199EE9D4005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D383A199EE9D4005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D383C199EEA37005990E8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WOThumbnailTableViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D383D199EEA37005990E8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WOThumbnailTableViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D383E199EEA37005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D383D199EEA37005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D384219A05419005990E8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WOUtilities.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D384319A05419005990E8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WOUtilities.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D384419A05419005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D384319A05419005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D385119A0545F005990E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6030D7C119A3254E00A10BE5</string>
+				<string>6030D7C219A3254E00A10BE5</string>
+				<string>6030D7BE19A3254E00A10BE5</string>
+				<string>6030D7BF19A3254E00A10BE5</string>
+				<string>6030D7BB19A3254D00A10BE5</string>
+				<string>6030D7BC19A3254D00A10BE5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D385519A0589E005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreData.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreData.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>605D385619A0589E005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D385519A0589E005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>605D38AA19A1D4A0005990E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>605D38AB19A1D4A0005990E8</string>
+			</array>
+			<key>currentVersion</key>
+			<string>605D38AB19A1D4A0005990E8</string>
+			<key>isa</key>
+			<string>XCVersionGroup</string>
+			<key>path</key>
+			<string>WorkoutzModel.xcdatamodeld</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>versionGroupType</key>
+			<string>wrapper.xcdatamodel</string>
+		</dict>
+		<key>605D38AB19A1D4A0005990E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.xcdatamodel</string>
+			<key>path</key>
+			<string>WorkoutzModel.xcdatamodel</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605D38AC19A1D4A0005990E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>605D38AA19A1D4A0005990E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>737F513B45D04399BD99192D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-WorkOutz.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-WorkOutz.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FD2613B8B274323A8BA5A21</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-WorkOutz-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>868F0F7B6FC146D385F1F508</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-WorkOutz.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>A4740661F57A4191801CAA22</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>605D37C41999178B005990E8</string>
+</dict>
+</plist>

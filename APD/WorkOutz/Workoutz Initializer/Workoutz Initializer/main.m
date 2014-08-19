@@ -84,6 +84,10 @@ int main(int argc, const char * argv[])
             routine.part = [obj objectForKey:@"targetBodyPart"];
             routine.image = [obj objectForKey:@"imageUrl"];
             
+            // fix the stupid ® html
+            routine.name = [routine.name stringByReplacingOccurrencesOfString:@"<sup>&reg;</sup>" withString:@"®"];
+            routine.name = [routine.name stringByReplacingOccurrencesOfString:@"&reg;" withString:@"®"];
+            
             NSError *error;
             if (![context save:&error]) {
                 NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);

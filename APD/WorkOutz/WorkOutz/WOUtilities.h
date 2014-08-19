@@ -14,5 +14,6 @@
 + (void) setManagedObjectContext:(NSManagedObjectContext*)context;
 
 + (NSArray*) getRoutines;
++ (NSDictionary*) getRoutineDictionary;
 
 @end
