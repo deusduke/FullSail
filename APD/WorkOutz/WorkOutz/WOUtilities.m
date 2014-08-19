@@ -32,9 +32,9 @@ static NSManagedObjectContext* managedObjectContext;
                                               inManagedObjectContext:managedObjectContext];
     [fetchRequest setEntity:entity];
     NSError *error;
-    NSArray *routineObjecs = [managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    NSArray *routineObjects = [managedObjectContext executeFetchRequest:fetchRequest error:&error];
     
-    return routineObjecs;
+    return routineObjects;
 }
 
 @end
