@@ -1,8 +1,8 @@
 //
 //  WOAppDelegate.h
-//  WorkOutz
+//  Test
 //
-//  Created by Deus Duke on 8/11/14.
+//  Created by Deus Duke on 8/19/14.
 //  Copyright (c) 2014 DEUS Enterprises. All rights reserved.
 //
 

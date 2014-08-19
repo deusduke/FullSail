@@ -15,7 +15,7 @@
 
 @implementation WOViewRoutinesTableViewController
 
-@synthesize routines, keys;
+@synthesize routines, keys, managedObjectContext;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {

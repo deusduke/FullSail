@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6030D7BD19A3254D00A10BE5 /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6030D7BC19A3254D00A10BE5 /* Workout.m */; };
+		6030D7C019A3254E00A10BE5 /* Routine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6030D7BF19A3254E00A10BE5 /* Routine.m */; };
+		6030D7C319A3254E00A10BE5 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6030D7C219A3254E00A10BE5 /* Settings.m */; };
+		6030D80E19A32DC700A10BE5 /* Workoutz Initializer.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6030D80D19A32DC700A10BE5 /* Workoutz Initializer.sqlite */; };
 		605D37D01999178B005990E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37CF1999178B005990E8 /* Foundation.framework */; };
 		605D37D21999178B005990E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37D11999178B005990E8 /* CoreGraphics.framework */; };
 		605D37D41999178B005990E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D37D31999178B005990E8 /* UIKit.framework */; };
@@ -31,9 +35,19 @@
 		605D3838199DA03C005990E8 /* WOCreateWorkoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D3837199DA03C005990E8 /* WOCreateWorkoutTableViewController.m */; };
 		605D383B199EE9D4005990E8 /* WOViewRoutinesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D383A199EE9D4005990E8 /* WOViewRoutinesTableViewController.m */; };
 		605D383E199EEA37005990E8 /* WOThumbnailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D383D199EEA37005990E8 /* WOThumbnailTableViewCell.m */; };
+		605D384419A05419005990E8 /* WOUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D384319A05419005990E8 /* WOUtilities.m */; };
+		605D385619A0589E005990E8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605D385519A0589E005990E8 /* CoreData.framework */; };
+		605D38AC19A1D4A0005990E8 /* WorkoutzModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 605D38AA19A1D4A0005990E8 /* WorkoutzModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6030D7F119A3261D00A10BE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6030D7ED19A3261D00A10BE5 /* Workoutz Initializer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6030D7D719A3261D00A10BE5;
+			remoteInfo = "Workoutz Initializer";
+		};
 		605D37F51999178C005990E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 605D37C41999178B005990E8 /* Project object */;
@@ -63,6 +77,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6030D7BB19A3254D00A10BE5 /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workout.h; sourceTree = "<group>"; };
+		6030D7BC19A3254D00A10BE5 /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workout.m; sourceTree = "<group>"; };
+		6030D7BE19A3254E00A10BE5 /* Routine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Routine.h; sourceTree = "<group>"; };
+		6030D7BF19A3254E00A10BE5 /* Routine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Routine.m; sourceTree = "<group>"; };
+		6030D7C119A3254E00A10BE5 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		6030D7C219A3254E00A10BE5 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		6030D7ED19A3261D00A10BE5 /* Workoutz Initializer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Workoutz Initializer.xcodeproj"; path = "Workoutz Initializer/Workoutz Initializer.xcodeproj"; sourceTree = "<group>"; };
+		6030D80D19A32DC700A10BE5 /* Workoutz Initializer.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Workoutz Initializer.sqlite"; sourceTree = "<group>"; };
 		605D37CC1999178B005990E8 /* WorkOutz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkOutz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		605D37CF1999178B005990E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		605D37D11999178B005990E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,6 +115,10 @@
 		605D383A199EE9D4005990E8 /* WOViewRoutinesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOViewRoutinesTableViewController.m; sourceTree = "<group>"; };
 		605D383C199EEA37005990E8 /* WOThumbnailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOThumbnailTableViewCell.h; sourceTree = "<group>"; };
 		605D383D199EEA37005990E8 /* WOThumbnailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOThumbnailTableViewCell.m; sourceTree = "<group>"; };
+		605D384219A05419005990E8 /* WOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOUtilities.h; sourceTree = "<group>"; };
+		605D384319A05419005990E8 /* WOUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOUtilities.m; sourceTree = "<group>"; };
+		605D385519A0589E005990E8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		605D38AB19A1D4A0005990E8 /* WorkoutzModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkoutzModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				605D385619A0589E005990E8 /* CoreData.framework in Frameworks */,
 				605D37D21999178B005990E8 /* CoreGraphics.framework in Frameworks */,
 				605D37D41999178B005990E8 /* UIKit.framework in Frameworks */,
 				605D37D01999178B005990E8 /* Foundation.framework in Frameworks */,
@@ -138,9 +165,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6030D7EE19A3261D00A10BE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6030D7F219A3261D00A10BE5 /* Workoutz Initializer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		605D37C31999178B005990E8 = {
 			isa = PBXGroup;
 			children = (
+				6030D7ED19A3261D00A10BE5 /* Workoutz Initializer.xcodeproj */,
 				605D37D51999178B005990E8 /* WorkOutz */,
 				605D37F71999178C005990E8 /* WorkOutzTests */,
 				605D37CE1999178B005990E8 /* Frameworks */,
@@ -162,6 +198,7 @@
 		605D37CE1999178B005990E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				605D385519A0589E005990E8 /* CoreData.framework */,
 				605D37CF1999178B005990E8 /* Foundation.framework */,
 				605D37D11999178B005990E8 /* CoreGraphics.framework */,
 				605D37D31999178B005990E8 /* UIKit.framework */,
@@ -173,6 +210,8 @@
 		605D37D51999178B005990E8 /* WorkOutz */ = {
 			isa = PBXGroup;
 			children = (
+				6030D80D19A32DC700A10BE5 /* Workoutz Initializer.sqlite */,
+				605D38AA19A1D4A0005990E8 /* WorkoutzModel.xcdatamodeld */,
 				605D37DE1999178B005990E8 /* WOAppDelegate.h */,
 				605D37DF1999178B005990E8 /* WOAppDelegate.m */,
 				605D37E11999178B005990E8 /* Main_iPhone.storyboard */,
@@ -189,6 +228,9 @@
 				605D383A199EE9D4005990E8 /* WOViewRoutinesTableViewController.m */,
 				605D383C199EEA37005990E8 /* WOThumbnailTableViewCell.h */,
 				605D383D199EEA37005990E8 /* WOThumbnailTableViewCell.m */,
+				605D384219A05419005990E8 /* WOUtilities.h */,
+				605D384319A05419005990E8 /* WOUtilities.m */,
+				605D385119A0545F005990E8 /* Model */,
 			);
 			path = WorkOutz;
 			sourceTree = "<group>";
@@ -220,6 +262,19 @@
 				605D37FA1999178C005990E8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		605D385119A0545F005990E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6030D7C119A3254E00A10BE5 /* Settings.h */,
+				6030D7C219A3254E00A10BE5 /* Settings.m */,
+				6030D7BE19A3254E00A10BE5 /* Routine.h */,
+				6030D7BF19A3254E00A10BE5 /* Routine.m */,
+				6030D7BB19A3254D00A10BE5 /* Workout.h */,
+				6030D7BC19A3254D00A10BE5 /* Workout.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +360,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "DEUS Enterprises";
 				TargetAttributes = {
+					605D37CB1999178B005990E8 = {
+						DevelopmentTeam = LXPCC5U83M;
+					};
 					605D37EF1999178C005990E8 = {
 						TestTargetID = 605D37CB1999178B005990E8;
 					};
@@ -324,6 +382,12 @@
 			mainGroup = 605D37C31999178B005990E8;
 			productRefGroup = 605D37CD1999178B005990E8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6030D7EE19A3261D00A10BE5 /* Products */;
+					ProjectRef = 6030D7ED19A3261D00A10BE5 /* Workoutz Initializer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				605D37CB1999178B005990E8 /* WorkOutz */,
@@ -334,11 +398,22 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		6030D7F219A3261D00A10BE5 /* Workoutz Initializer */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "Workoutz Initializer";
+			remoteRef = 6030D7F119A3261D00A10BE5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		605D37CA1999178B005990E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6030D80E19A32DC700A10BE5 /* Workoutz Initializer.sqlite in Resources */,
 				605D37E61999178B005990E8 /* Main_iPad.storyboard in Resources */,
 				605D37EB1999178B005990E8 /* Images.xcassets in Resources */,
 				605D37E31999178B005990E8 /* Main_iPhone.storyboard in Resources */,
@@ -370,11 +445,16 @@
 			files = (
 				605D383E199EEA37005990E8 /* WOThumbnailTableViewCell.m in Sources */,
 				605D37E01999178B005990E8 /* WOAppDelegate.m in Sources */,
+				6030D7C319A3254E00A10BE5 /* Settings.m in Sources */,
 				605D3838199DA03C005990E8 /* WOCreateWorkoutTableViewController.m in Sources */,
 				605D37DC1999178B005990E8 /* main.m in Sources */,
+				6030D7C019A3254E00A10BE5 /* Routine.m in Sources */,
 				605D37E91999178B005990E8 /* WOViewController.m in Sources */,
 				605D3832199C06F2005990E8 /* WOBorderButton.m in Sources */,
 				605D383B199EE9D4005990E8 /* WOViewRoutinesTableViewController.m in Sources */,
+				6030D7BD19A3254D00A10BE5 /* Workout.m in Sources */,
+				605D38AC19A1D4A0005990E8 /* WorkoutzModel.xcdatamodeld in Sources */,
+				605D384419A05419005990E8 /* WOUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +608,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WorkOutz/WorkOutz-Prefix.pch";
 				INFOPLIST_FILE = "WorkOutz/WorkOutz-Info.plist";
@@ -541,6 +622,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WorkOutz/WorkOutz-Prefix.pch";
 				INFOPLIST_FILE = "WorkOutz/WorkOutz-Info.plist";
@@ -706,6 +788,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		605D38AA19A1D4A0005990E8 /* WorkoutzModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				605D38AB19A1D4A0005990E8 /* WorkoutzModel.xcdatamodel */,
+			);
+			currentVersion = 605D38AB19A1D4A0005990E8 /* WorkoutzModel.xcdatamodel */;
+			path = WorkoutzModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 605D37C41999178B005990E8 /* Project object */;
 }

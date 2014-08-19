@@ -12,6 +12,7 @@
 
 @property (nonatomic) NSDictionary* routines;
 @property (nonatomic) NSArray* keys;
+@property (nonatomic,strong) NSManagedObjectContext* managedObjectContext;
 
 - (NSString*)intToCharString:(NSInteger)number;
 
